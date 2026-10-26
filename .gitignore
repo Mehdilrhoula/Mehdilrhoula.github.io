@@ -1,0 +1,24 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+# Environnements et fichiers temporaires
+venv/
+.venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
+# Consignes et sortie de terminal accidentelle
+portfolio-project.pdf
+witch buttons*
