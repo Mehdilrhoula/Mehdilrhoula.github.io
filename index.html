@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,40 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Portfolio de Mehdi Lrhoula, étudiant à Epitech en reconversion vers l'informatique. Découvrez mes projets, compétences et expériences.">
+        content="Portfolio de Mehdi Lrhoula, étudiant à Epitech en reconversion vers l'informatique. Découvrez mes projets, compétences et expériences."
+        data-i18n-content="metaDescription">
 
     <title>Portfolio | Mehdi Lrhoula</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projets.html">Mes projets</a>
-            <a href="competences.html">Mes compétences</a>
-            <a href="experiences.html">Mes expériences</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Navigation principale">
+            <a href="index.html" data-i18n="navHome" aria-current="page">Accueil</a>
+            <a href="projets.html" data-i18n="navProjects">Mes projets</a>
+            <a href="competences.html" data-i18n="navSkills">Mes compétences</a>
+            <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
+            <a href="contact.html" data-i18n="navContact">Contact</a>
+
+            <div class="lang-switch" role="group" aria-label="Choix de la langue">
+                <button type="button" class="lang-btn active" data-lang="fr"
+                    aria-pressed="true">FR</button>
+                <button type="button" class="lang-btn" data-lang="en"
+                    aria-pressed="false">EN</button>
+            </div>
         </nav>
     </header>
-    <main>
 
+    <main>
         <section class="hero">
 
             <div class="hero-photo">
-                <img src="images/photo-profil.png" alt="Photo professionnelle de Mehdi Lrhoula">
+                <img src="images/photo-profil.png"
+                    alt="Photo professionnelle de Mehdi Lrhoula">
             </div>
 
             <div class="hero-contenu">
 
-                <p class="hero-intro">Bonjour, je suis</p>
+                <p class="hero-intro" data-i18n="heroIntro">Bonjour, je suis</p>
 
                 <h1>Mehdi Lrhoula</h1>
 
-                <h2>Étudiant à Epitech • Informatique, Data & Intelligence Artificielle</h2>
+                <h2 data-i18n="heroSubtitle">
+                    Étudiant à Epitech • Informatique, Data & Intelligence Artificielle
+                </h2>
 
-                <p>
+                <p data-i18n="heroDescription">
                     En reconversion professionnelle vers l'informatique, je suis actuellement
                     étudiant à Epitech en Pré-MSc. Après plusieurs années d'expérience en
                     gestion de projets, business development et transport maritime international,
@@ -47,30 +60,35 @@
                     un profil à l'interface entre technologies et enjeux métiers.
                 </p>
 
-                <p>
+                <p data-i18n="heroPortfolio">
                     À travers ce portfolio, je présente mes projets, les technologies que
                     j'apprends et ma progression au cours de ma formation.
                 </p>
 
                 <div class="hero-liens">
-                    <a href="projets.html">Découvrir mes projets</a>
+                    <a href="projets.html" data-i18n="discoverProjects">
+                        Découvrir mes projets
+                    </a>
 
-                    <a href="https://github.com/Mehdilrhoula" target="_blank">
+                    <a href="https://github.com/Mehdilrhoula"
+                        target="_blank" rel="noopener noreferrer">
                         GitHub
                     </a>
 
-                    <a href="https://www.linkedin.com/in/mehdi-lrhoula-2734bb175/" target="_blank">
+                    <a href="https://www.linkedin.com/in/mehdi-lrhoula-2734bb175/"
+                        target="_blank" rel="noopener noreferrer">
                         LinkedIn
                     </a>
-                    <a href="documents/cv-mehdi-lrhoula.pdf" download>
+
+                    <a href="documents/cv-mehdi-lrhoula.pdf"
+                        download="CV-Mehdi-Lrhoula.pdf"
+                        data-i18n="downloadCV">
                         Télécharger mon CV
                     </a>
                 </div>
 
             </div>
-
         </section>
-
     </main>
 </body>
 
