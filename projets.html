@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,145 +6,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Découvrez les projets informatiques réalisés par Mehdi Lrhoula au cours de sa formation à Epitech.">
+    <meta name="description"
+        content="Découvrez les projets informatiques réalisés par Mehdi Lrhoula au cours de sa formation à Epitech."
+        data-i18n-content="projectsMetaDescription">
 
     <title>Mes projets | Mehdi Lrhoula</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projets.html">Mes projets</a>
-            <a href="competences.html">Mes compétences</a>
-            <a href="experiences.html">Mes expériences</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Navigation principale">
+
+            <a href="index.html" data-i18n="navHome">Accueil</a>
+            <a href="projets.html" data-i18n="navProjects" aria-current="page">Mes projets</a>
+            <a href="competences.html" data-i18n="navSkills">Mes compétences</a>
+            <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
+            <a href="contact.html" data-i18n="navContact">Contact</a>
+
+            <div class="lang-switch" role="group" aria-label="Choix de la langue">
+                <button type="button" class="lang-btn active" data-lang="fr"
+                    aria-pressed="true">FR</button>
+                <button type="button" class="lang-btn" data-lang="en"
+                    aria-pressed="false">EN</button>
+            </div>
+
         </nav>
     </header>
 
     <main>
-<section class="page-projets">
+        <section class="page-projets">
 
-    <div class="titre-page">
-        <h1>Mes projets</h1>
+            <div class="titre-page">
 
-        <p>
-            Découvrez les projets que j'ai réalisés au cours de ma formation
-            et les compétences que j'ai développées à travers chacun d'entre eux.
-        </p>
-    </div>
+                <h1 data-i18n="projectsTitle">Mes projets</h1>
 
-    <article class="carte-projet">
+                <p data-i18n="projectsIntroduction">
+                    Découvrez les projets que j'ai réalisés au cours de ma formation
+                    et les compétences que j'ai développées à travers chacun d'entre eux.
+                </p>
 
-        <h2>Jeu du Pendu</h2>
+            </div>
 
-        <p class="projet-technologies">
-            Python • Pygame
-        </p>
+            <article class="carte-projet">
 
-        <h3>Contexte et objectif</h3>
+                <h2>PYJOBS — Job Board</h2>
 
-        <p>
-            Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation
-            à Epitech. L'objectif était de mettre en pratique les fondamentaux
-            de la programmation en développant une application interactive.
-        </p>
+                <p class="projet-technologies">
+                    React • JavaScript • Django REST • Python
+                </p>
 
-        <h3>Ce que j'ai réalisé</h3>
+                <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
 
-        <p>
-            Le projet permet de sélectionner aléatoirement un mot, de gérer
-            les lettres proposées par le joueur, les erreurs et les conditions
-            de victoire ou de défaite. Une interface graphique a ensuite été
-            développée avec Pygame.
-        </p>
+                <p data-i18n="pyjobsContext">
+                    Développement d'une plateforme de recrutement dans le cadre
+                    de ma formation à Epitech. L'objectif était de créer une
+                    application web permettant aux entreprises de publier des
+                    offres d'emploi et aux candidats de postuler.
+                </p>
 
-        <h3>Ce que j'ai appris</h3>
+                <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
 
-        <p>
-            Ce projet m'a permis de progresser dans l'utilisation des fonctions,
-            des conditions, des boucles, des fichiers et dans l'organisation
-            générale d'un programme Python.
-        </p>
-    <div class="projet-liens">
-    <a href="https://github.com/EpitechMscProPromo2029/T-PRE-500-MAR-5-1-seminar_preparation_day09-5/tree/master/hangman"
-       target="_blank"
-       rel="noopener noreferrer">
-        Voir le code sur GitHub
-    </a>
-</div>    
+                <p data-i18n="pyjobsWork">
+                    J'ai travaillé sur le frontend avec React et son intégration
+                    avec une API Django REST. Le projet comprend un système
+                    d'authentification, des espaces candidats et employeurs,
+                    la publication et la gestion d'annonces ainsi que le suivi
+                    des candidatures.
+                </p>
 
-    </article>
+                <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
 
-    <article class="carte-projet">
+                <p data-i18n="pyjobsLearning">
+                    Ce projet m'a permis de progresser en React, dans la
+                    communication entre un frontend et un backend, l'utilisation
+                    des API REST, la gestion des rôles utilisateurs et les
+                    tests fonctionnels. J'ai également découvert les enjeux
+                    du travail collaboratif avec Git.
+                </p>
 
-    <h2>CodingPedia</h2>
+                <div class="projet-liens">
+                    <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-MAR-5-1-job_board-3"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-i18n="viewGithub">
+                        Voir le code sur GitHub
+                    </a>
+                </div>
 
-    <p class="projet-technologies">
-        HTML • CSS
-    </p>
+            </article>
 
-    <h3>Contexte et objectif</h3>
+            <article class="carte-projet">
 
-    <p>
-        Réalisation d'un site web dans le cadre de ma formation à Epitech.
-        L'objectif était de découvrir les fondamentaux du développement web
-        et de construire des pages structurées en HTML et mises en forme avec CSS.
-    </p>
-<h3>Ce que j'ai réalisé</h3>
+                <h2 data-i18n="hangmanTitle">Jeu du Pendu</h2>
 
-<p>
-    J'ai créé plusieurs pages web en utilisant les principales balises HTML
-    et les propriétés CSS pour organiser et mettre en forme le contenu.
-    J'ai également travaillé sur la structure des pages, la navigation
-    et l'adaptation de l'affichage à différentes tailles d'écran.
-</p>
+                <p class="projet-technologies">
+                    Python • Pygame
+                </p>
 
-<h3>Ce que j'ai appris</h3>
+                <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
 
-<p>
-    Ce projet m'a permis de mieux comprendre la séparation entre la structure
-    HTML et la mise en forme CSS, ainsi que l'utilisation de Flexbox et des
-    media queries pour créer des interfaces responsives.
-</p>
-<h3>Ma progression</h3>
+                <p data-i18n="hangmanContext">
+                    Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation
+                    à Epitech. L'objectif était de mettre en pratique les fondamentaux
+                    de la programmation en développant une application interactive.
+                </p>
 
-<p>
-    CodingPedia a évolué progressivement au fil de plusieurs exercices.
-    J'ai commencé par construire la structure des pages en HTML avant
-    d'ajouter progressivement la navigation, la mise en forme CSS et
-    l'adaptation de l'interface aux différentes tailles d'écran.
-</p>
+                <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
 
-<div class="projet-liens">
-    <a href="https://github.com/EpitechMscProPromo2029/T-WEB-500-MAR-5-1-webd02-2/tree/master/task08"
-       target="_blank"
-       rel="noopener noreferrer">
-        Voir le code sur GitHub
-    </a>
-</div>
+                <p data-i18n="hangmanWork">
+                    Le projet permet de sélectionner aléatoirement un mot, de gérer
+                    les lettres proposées par le joueur, les erreurs et les conditions
+                    de victoire ou de défaite. Une interface graphique a ensuite été
+                    développée avec Pygame.
+                </p>
 
-</article>
-<section class="progression">
+                <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
 
-    <h2>Ma progression</h2>
+                <p data-i18n="hangmanLearning">
+                    Ce projet m'a permis de progresser dans l'utilisation des fonctions,
+                    des conditions, des boucles, des fichiers et dans l'organisation
+                    générale d'un programme Python.
+                </p>
 
-    <p>
-        Ces premiers projets représentent mes débuts dans le développement.
-        J'ai commencé par apprendre les fondamentaux de Python, puis la
-        création de pages web avec HTML et CSS. Au fil des exercices,
-        j'ai progressivement appris à structurer davantage mon code,
-        à créer des interfaces responsives et à utiliser Git et GitHub
-        pour versionner mes projets.
-    </p>
+                <div class="projet-liens">
+                    <a href="https://github.com/EpitechMscProPromo2029/T-PRE-500-MAR-5-1-seminar_preparation_day09-5/tree/master/hangman"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-i18n="viewGithub">
+                        Voir le code sur GitHub
+                    </a>
+                </div>
 
-</section>
-</section>
+            </article>
+
+            <article class="carte-projet">
+
+                <h2>CodingPedia</h2>
+
+                <p class="projet-technologies">
+                    HTML • CSS
+                </p>
+
+                <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
+
+                <p data-i18n="codingContext">
+                    Réalisation d'un site web dans le cadre de ma formation à Epitech.
+                    L'objectif était de découvrir les fondamentaux du développement web
+                    et de construire des pages structurées en HTML et mises en forme avec CSS.
+                </p>
+
+                <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
+
+                <p data-i18n="codingWork">
+                    J'ai créé plusieurs pages web en utilisant les principales balises HTML
+                    et les propriétés CSS pour organiser et mettre en forme le contenu.
+                    J'ai également travaillé sur la structure des pages, la navigation
+                    et l'adaptation de l'affichage à différentes tailles d'écran.
+                </p>
+
+                <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
+
+                <p data-i18n="codingLearning">
+                    Ce projet m'a permis de mieux comprendre la séparation entre la structure
+                    HTML et la mise en forme CSS, ainsi que l'utilisation de Flexbox et des
+                    media queries pour créer des interfaces responsives.
+                </p>
+
+                <h3 data-i18n="codingProgressTitle">Ma progression</h3>
+
+                <p data-i18n="codingProgress">
+                    CodingPedia a évolué progressivement au fil de plusieurs exercices.
+                    J'ai commencé par construire la structure des pages en HTML avant
+                    d'ajouter progressivement la navigation, la mise en forme CSS et
+                    l'adaptation de l'interface aux différentes tailles d'écran.
+                </p>
+
+                <div class="projet-liens">
+                    <a href="https://github.com/EpitechMscProPromo2029/T-WEB-500-MAR-5-1-webd02-2/tree/master/task08"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-i18n="viewGithub">
+                        Voir le code sur GitHub
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="carte-projet">
+
+                <h2>Frigorithm — Smart Fridge</h2>
+
+                <p class="projet-technologies" data-i18n="frigoTechnologies">
+                    Conception produit • Gestion de projet • Gantt
+                </p>
+
+                <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
+
+                <p data-i18n="frigoContext">
+                    Projet de conception d'un réfrigérateur intelligent réalisé
+                    en équipe dans le cadre de ma formation à Epitech.
+                    L'objectif est d'imaginer une solution permettant de mieux
+                    gérer les aliments, de réduire le gaspillage et de faciliter
+                    l'organisation des repas.
+                </p>
+
+                <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
+
+                <p data-i18n="frigoWork">
+                    Avec mon équipe, nous avons défini les fonctionnalités envisagées :
+                    gestion des stocks, suivi des dates de péremption, recommandations
+                    de recettes et planification des repas. Nous travaillons
+                    également sur le cadrage du projet, ses priorités, ses risques
+                    et son diagramme de Gantt.
+                </p>
+
+                <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
+
+                <p data-i18n="frigoLearning">
+                    Ce projet me permet de découvrir les premières étapes de
+                    conception d'un produit numérique, notamment l'analyse des
+                    besoins, la priorisation des fonctionnalités, la gestion
+                    des risques et l'organisation du travail en équipe.
+                </p>
+
+                <p data-i18n="projectInProgress">
+                    Projet en cours de conception.
+                </p>
+
+            </article>
+
+            <section class="progression">
+
+                <h2 data-i18n="progressTitle">Ma progression</h2>
+
+                <p data-i18n="progressDescription">
+                    Ces projets illustrent ma progression dans le développement
+                    informatique et la gestion de projets numériques.
+                    Après avoir découvert Python, HTML et CSS, j'ai approfondi
+                    mes connaissances avec React, Django REST et les API.
+                    Je développe progressivement mes compétences techniques
+                    tout en m'appuyant sur mon expérience professionnelle
+                    en gestion de projet et en développement commercial.
+                </p>
+
+            </section>
+
+        </section>
     </main>
 
 </body>
-
 </html>
