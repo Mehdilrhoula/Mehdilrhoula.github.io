@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,110 +6,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation et de ses expériences.">
+    <meta name="description"
+        content="Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation et de ses expériences."
+        data-i18n-content="skillsMetaDescription">
 
     <title>Mes compétences | Mehdi Lrhoula</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projets.html">Mes projets</a>
-            <a href="competences.html">Mes compétences</a>
-            <a href="experiences.html">Mes expériences</a>
-            <a href="contact.html">Contact</a>
+        <nav aria-label="Navigation principale">
+            <a href="index.html" data-i18n="navHome">Accueil</a>
+            <a href="projets.html" data-i18n="navProjects">Mes projets</a>
+            <a href="competences.html" data-i18n="navSkills" aria-current="page">Mes compétences</a>
+            <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
+            <a href="contact.html" data-i18n="navContact">Contact</a>
+
+            <div class="lang-switch" role="group" aria-label="Choix de la langue">
+                <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
         </nav>
     </header>
 
     <main>
-
         <section class="page-competences">
 
             <div class="titre-page">
-                <h1>Mes compétences</h1>
-
-                <p>
+                <h1 data-i18n="skillsTitle">Mes compétences</h1>
+                <p data-i18n="skillsIntro">
                     Les compétences techniques et professionnelles que je développe
                     au cours de ma formation à Epitech et de mes projets.
                 </p>
             </div>
-<div class="competences-grille">
 
-    <article class="competence-carte">
-        <h2>Développement</h2>
+            <div class="competences-grille">
 
-        <h3>Python</h3>
-        <p>
-            Fonctions, conditions, boucles, manipulation de données,
-            fichiers et développement d'applications avec Pygame.
-        </p>
+                <article class="competence-carte">
+                    <h2 data-i18n="skillsDevelopment">Développement</h2>
 
-        <h3>HTML & CSS</h3>
-        <p>
-            Structure de pages web, mise en forme, Flexbox,
-            responsive design et media queries.
-        </p>
-    </article>
+                    <h3>Python</h3>
+                    <p data-i18n="skillsPython">
+                        Fonctions, conditions, boucles, manipulation de données,
+                        fichiers et développement d'applications avec Pygame.
+                    </p>
 
-    <article class="competence-carte">
-        <h2>Outils & environnement</h2>
+                    <h3>HTML & CSS</h3>
+                    <p data-i18n="skillsHtml">
+                        Structure de pages web, mise en forme, Flexbox,
+                        responsive design et media queries.
+                    </p>
+                </article>
 
-        <h3>Git & GitHub</h3>
-        <p>
-            Versionnement de projets, commits, gestion de dépôts
-            et publication du code sur GitHub.
-        </p>
+                <article class="competence-carte">
+                    <h2 data-i18n="skillsTools">Outils & environnement</h2>
 
-        <h3>VS Code & terminal</h3>
-        <p>
-            Utilisation de Visual Studio Code, PowerShell et terminal
-            pour développer et organiser mes projets.
-        </p>
-    </article>
+                    <h3>Git & GitHub</h3>
+                    <p data-i18n="skillsGit">
+                        Versionnement de projets, commits, gestion de dépôts
+                        et publication du code sur GitHub.
+                    </p>
 
-    <article class="competence-carte">
-        <h2>Gestion de projet & métier</h2>
+                    <h3 data-i18n="skillsTerminalTitle">VS Code & terminal</h3>
+                    <p data-i18n="skillsTerminal">
+                        Utilisation de Visual Studio Code, PowerShell et terminal
+                        pour développer et organiser mes projets.
+                    </p>
+                </article>
 
-        <h3>Gestion de projet</h3>
-        <p>
-            Organisation, coordination d'équipes, suivi d'objectifs
-            et pilotage de projets.
-        </p>
+                <article class="competence-carte">
+                    <h2 data-i18n="skillsBusiness">Gestion de projet & métier</h2>
 
-        <h3>Analyse des besoins</h3>
-        <p>
-            Compréhension des problématiques métiers et traduction
-            des besoins en objectifs et solutions.
-        </p>
-    </article>
+                    <h3 data-i18n="skillsProjectTitle">Gestion de projet</h3>
+                    <p data-i18n="skillsProject">
+                        Organisation, coordination d'équipes, suivi d'objectifs
+                        et pilotage de projets.
+                    </p>
 
-</div>
-<div class="competences-apprentissage">
+                    <h3 data-i18n="skillsNeedsTitle">Analyse des besoins</h3>
+                    <p data-i18n="skillsNeeds">
+                        Compréhension des problématiques métiers et traduction
+                        des besoins en objectifs et solutions.
+                    </p>
+                </article>
 
-    <h2>Compétences en cours d'acquisition</h2>
+            </div>
 
-    <p>
-        Ma formation à Epitech me permet d'élargir progressivement mes
-        compétences vers de nouveaux domaines de l'informatique.
-    </p>
+            <div class="competences-apprentissage">
 
-    <div class="apprentissage-liste">
-        <span>Data</span>
-        <span>Intelligence Artificielle</span>
-        <span>JavaScript</span>
-        <span>Gestion de projet IT</span>
-        <span>Transformation digitale</span>
-    </div>
+                <h2 data-i18n="skillsLearningTitle">Compétences en cours d'acquisition</h2>
 
-</div>
+                <p data-i18n="skillsLearningIntro">
+                    Ma formation à Epitech me permet d'élargir progressivement mes
+                    compétences vers de nouveaux domaines de l'informatique.
+                </p>
+
+                <div class="apprentissage-liste">
+                    <span>Data</span>
+                    <span data-i18n="skillsAI">Intelligence Artificielle</span>
+                    <span>JavaScript</span>
+                    <span data-i18n="skillsITProject">Gestion de projet IT</span>
+                    <span data-i18n="skillsDigital">Transformation digitale</span>
+                </div>
+
+            </div>
+
         </section>
-
     </main>
 
 </body>
-
 </html>
