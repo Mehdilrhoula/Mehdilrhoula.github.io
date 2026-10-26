@@ -30,7 +30,9 @@ const translations = {
         pyjobsContext: "Développement d'une plateforme de recrutement dans le cadre de ma formation à Epitech. L'objectif était de créer une application web permettant aux entreprises de publier des offres d'emploi et aux candidats de postuler.",
         pyjobsWork: "J'ai travaillé sur le frontend avec React et son intégration avec une API Django REST. Le projet comprend un système d'authentification, des espaces candidats et employeurs, la publication et la gestion d'annonces ainsi que le suivi des candidatures.",
         pyjobsLearning: "Ce projet m'a permis de progresser en React, dans la communication entre un frontend et un backend, l'utilisation des API REST, la gestion des rôles utilisateurs et les tests fonctionnels. J'ai également découvert les enjeux du travail collaboratif avec Git.",
-
+        pyjobsCaptionHome: "Accueil — Présentation de la plateforme et découverte des offres d'emploi.",
+        pyjobsCaptionEmployer: "Espace employeur — Gestion des entreprises, des annonces et des candidatures reçues.",
+        pyjobsCaptionCandidate: "Espace candidat — Consultation des candidatures et suivi de leur statut.",
         hangmanTitle: "Jeu du Pendu",
         hangmanContext: "Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation à Epitech. L'objectif était de mettre en pratique les fondamentaux de la programmation en développant une application interactive.",
         hangmanWork: "Le projet permet de sélectionner aléatoirement un mot, de gérer les lettres proposées par le joueur, les erreurs et les conditions de victoire ou de défaite. Une interface graphique a ensuite été développée avec Pygame.",
@@ -137,7 +139,9 @@ const translations = {
         pyjobsContext: "Development of a recruitment platform as part of my studies at Epitech. The objective was to build a web application allowing companies to publish job opportunities and candidates to apply.",
         pyjobsWork: "I worked on the React frontend and its integration with a Django REST API. The project includes authentication, candidate and employer dashboards, job posting and management features, as well as application tracking.",
         pyjobsLearning: "This project helped me improve my React skills, understand frontend-backend communication, work with REST APIs, manage user roles and perform functional testing. I also gained experience in collaborative development using Git.",
-
+        pyjobsCaptionHome: "Home — Introduction to the platform and exploration of job opportunities.",
+        pyjobsCaptionEmployer: "Employer dashboard — Manage companies, job postings and received applications.",
+        pyjobsCaptionCandidate: "Candidate dashboard — View submitted applications and track their status.",
         hangmanTitle: "Hangman Game",
         hangmanContext: "Development of a Hangman game in Python as part of my studies at Epitech. The goal was to practice programming fundamentals by building an interactive application.",
         hangmanWork: "The game randomly selects a word, handles player guesses, tracks mistakes and determines win or loss conditions. A graphical interface was then developed using Pygame.",

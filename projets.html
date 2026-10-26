@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/lang.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -51,6 +52,48 @@
             <article class="carte-projet">
 
                 <h2>PYJOBS — Job Board</h2>
+                <div class="projet-carousel" id="pyjobs-carousel" aria-label="Captures d'écran du projet PYJOBS">
+
+                    <figure class="carousel-slide">
+                        <img src="images/projets/pyjobs-accueil.png"
+                            alt="Page d'accueil de PYJOBS présentant la plateforme de recrutement" loading="lazy">
+
+                        <figcaption data-i18n="pyjobsCaptionHome">
+                            Accueil — Présentation de la plateforme et découverte des offres d'emploi.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/projets/pyjobs-employeur.png"
+                            alt="Tableau de bord employeur de PYJOBS avec gestion des entreprises et des annonces"
+                            loading="lazy">
+
+                        <figcaption data-i18n="pyjobsCaptionEmployer">
+                            Espace employeur — Gestion des entreprises, des annonces et des candidatures reçues.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-slide" hidden>
+                        <img src="images/projets/pyjobs-candidat.png"
+                            alt="Espace candidat PYJOBS affichant les candidatures et leur statut" loading="lazy">
+
+                        <figcaption data-i18n="pyjobsCaptionCandidate">
+                            Espace candidat — Consultation des candidatures et suivi de leur statut.
+                        </figcaption>
+                    </figure>
+
+                    <div class="carousel-controls">
+                        <button type="button" class="carousel-prev" aria-label="Capture précédente">
+                            &#8592;
+                        </button>
+
+                        <span class="carousel-counter" aria-live="polite">1 / 3</span>
+
+                        <button type="button" class="carousel-next" aria-label="Capture suivante">
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
 
                 <p class="projet-technologies">
                     React • JavaScript • Django REST • Python
