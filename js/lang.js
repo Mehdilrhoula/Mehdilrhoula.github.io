@@ -383,7 +383,8 @@ Object.assign(translations.en, {
 changeLanguage(savedLanguage);
 
 
-/* MENU HAMBURGER MOBILE */
+
+/* MENU HAMBURGER MOBILE ACCESSIBLE ET BILINGUE */
 
 function initMobileMenu() {
     const nav = document.querySelector("header nav");
@@ -396,9 +397,7 @@ function initMobileMenu() {
 
     menuButton.type = "button";
     menuButton.className = "menu-toggle";
-    menuButton.setAttribute("aria-label", "Ouvrir le menu");
     menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-controls", "mobile-navigation");
 
     menuButton.innerHTML = `
         <span class="menu-icon" aria-hidden="true">
@@ -408,15 +407,44 @@ function initMobileMenu() {
         </span>
     `;
 
-    nav.id = "mobile-navigation";
     nav.prepend(menuButton);
 
+    // Repérer la langue actuellement sélectionnée
+    function getCurrentLanguage() {
+        return document.documentElement.lang === "en" ? "en" : "fr";
+    }
+
+    // Actualiser le texte accessible du bouton
+    function updateMenuLabel() {
+        const isOpen = nav.classList.contains("menu-open");
+        const lang = getCurrentLanguage();
+
+        const labels = {
+            fr: {
+                open: "Ouvrir le menu",
+                close: "Fermer le menu"
+            },
+            en: {
+                open: "Open menu",
+                close: "Close menu"
+            }
+        };
+
+        const label = isOpen
+            ? labels[lang].close
+            : labels[lang].open;
+
+        menuButton.setAttribute("aria-label", label);
+    }
+
+    // Fermer le menu
     function closeMenu() {
         nav.classList.remove("menu-open");
         menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Ouvrir le menu");
+        updateMenuLabel();
     }
 
+    // Ouvrir et fermer avec le bouton
     menuButton.addEventListener("click", () => {
         const isOpen = nav.classList.toggle("menu-open");
 
@@ -425,36 +453,47 @@ function initMobileMenu() {
             String(isOpen)
         );
 
-        menuButton.setAttribute(
-            "aria-label",
-            isOpen ? "Fermer le menu" : "Ouvrir le menu"
-        );
+        updateMenuLabel();
     });
 
+    // Fermer après un clic sur un lien
     nav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", closeMenu);
     });
 
+    // Fermer avec la touche Échap
     document.addEventListener("keydown", event => {
-        if (event.key === "Escape" &&
-            nav.classList.contains("menu-open")) {
-
+        if (
+            event.key === "Escape" &&
+            nav.classList.contains("menu-open")
+        ) {
             closeMenu();
             menuButton.focus();
         }
     });
 
+    // Fermer après un clic en dehors
     document.addEventListener("click", event => {
         if (!nav.contains(event.target)) {
             closeMenu();
         }
     });
 
+    // Réinitialiser en passant au mode ordinateur
     window.addEventListener("resize", () => {
         if (window.innerWidth > 700) {
             closeMenu();
         }
     });
+
+    // Actualiser le libellé lors du changement FR/EN
+    nav.querySelectorAll(".lang-btn").forEach(button => {
+        button.addEventListener("click", () => {
+            updateMenuLabel();
+        });
+    });
+
+    updateMenuLabel();
 }
 
 initMobileMenu();
