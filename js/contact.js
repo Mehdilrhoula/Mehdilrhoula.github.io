@@ -30,12 +30,7 @@ if (formulaire) {
             "?subject=" + encodeURIComponent(sujet) +
             "&body=" + encodeURIComponent(contenu);
 
-        alert(
-            lang === "en"
-                ? "The form works. Your email application will now be opened."
-                : "Le formulaire fonctionne. Nous allons maintenant tenter d'ouvrir votre messagerie."
-        );
-
+     
         window.location.href = lienEmail;
     });
 }
