@@ -5,47 +5,37 @@ if (formulaire) {
     formulaire.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        // Récupérer les informations du visiteur
         const nom = document.getElementById("nom").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        // Vérifier la langue du portfolio
+        if (!formulaire.reportValidity()) {
+            return;
+        }
+
         const lang = document.documentElement.lang === "en"
             ? "en"
             : "fr";
 
-        // Vérifier les champs du formulaire
-        if (!formulaire.checkValidity() || !nom || !email || !message) {
-            formulaire.reportValidity();
-            return;
-        }
-
-        // Préparer le sujet de l'e-mail
         const sujet = lang === "en"
             ? "Portfolio contact from " + nom
             : "Message portfolio de " + nom;
 
-        // Préparer le contenu de l'e-mail
         const contenu = lang === "en"
-            ? `Name: ${nom}
-Email: ${email}
+            ? `Name: ${nom}\nEmail: ${email}\n\nMessage:\n${message}`
+            : `Nom : ${nom}\nEmail : ${email}\n\nMessage :\n${message}`;
 
-Message:
-${message}`
-            : `Nom : ${nom}
-Email : ${email}
+        const lienEmail =
+            "mailto:mehdi.lrhoula@epitech.eu" +
+            "?subject=" + encodeURIComponent(sujet) +
+            "&body=" + encodeURIComponent(contenu);
 
-Message :
-${message}`;
+        alert(
+            lang === "en"
+                ? "The form works. Your email application will now be opened."
+                : "Le formulaire fonctionne. Nous allons maintenant tenter d'ouvrir votre messagerie."
+        );
 
-        // Adresse du destinataire
-        const destinataire = "mehdi.lrhoula@epitech.eu";
-
-        // Construire le lien e-mail
-        const lienEmail = `mailto:${destinataire}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(contenu)}`;
-
-        // Ouvrir la messagerie du visiteur
         window.location.href = lienEmail;
     });
 }
