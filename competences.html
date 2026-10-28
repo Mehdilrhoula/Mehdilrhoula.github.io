@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation et de ses expériences."
+        content="Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation à Epitech et de ses expériences."
         data-i18n-content="skillsMetaDescription">
 
     <title>Mes compétences | Mehdi Lrhoula</title>
@@ -22,13 +22,17 @@
         <nav aria-label="Navigation principale">
             <a href="index.html" data-i18n="navHome">Accueil</a>
             <a href="projets.html" data-i18n="navProjects">Mes projets</a>
-            <a href="competences.html" data-i18n="navSkills" aria-current="page">Mes compétences</a>
+            <a href="competences.html" data-i18n="navSkills"
+                aria-current="page">Mes compétences</a>
             <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
             <a href="contact.html" data-i18n="navContact">Contact</a>
 
-            <div class="lang-switch" role="group" aria-label="Choix de la langue">
-                <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
-                <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <div class="lang-switch" role="group"
+                aria-label="Choix de la langue">
+                <button type="button" class="lang-btn active"
+                    data-lang="fr" aria-pressed="true">FR</button>
+                <button type="button" class="lang-btn"
+                    data-lang="en" aria-pressed="false">EN</button>
             </div>
         </nav>
     </header>
@@ -39,78 +43,187 @@
             <div class="titre-page">
                 <h1 data-i18n="skillsTitle">Mes compétences</h1>
                 <p data-i18n="skillsIntro">
-                    Les compétences techniques et professionnelles que je développe
-                    au cours de ma formation à Epitech et de mes projets.
+                    Les compétences techniques et professionnelles
+                    que je développe à Epitech, complétées par
+                    mon expérience en gestion de projet et en business.
                 </p>
             </div>
 
             <div class="competences-grille">
 
+                <!-- DEVELOPPEMENT WEB -->
                 <article class="competence-carte">
-                    <h2 data-i18n="skillsDevelopment">Développement</h2>
+                    <h2 data-i18n="skillsDevelopment">
+                        Développement web
+                    </h2>
 
-                    <h3>Python</h3>
-                    <p data-i18n="skillsPython">
-                        Fonctions, conditions, boucles, manipulation de données,
-                        fichiers et développement d'applications avec Pygame.
+                    <h3>HTML5 & CSS3</h3>
+                    <p data-i18n="skillsHtml">
+                        Structure HTML, Flexbox, CSS Grid,
+                        responsive design, media queries
+                        et bases de l'accessibilité.
                     </p>
 
-                    <h3>HTML & CSS</h3>
-                    <p data-i18n="skillsHtml">
-                        Structure de pages web, mise en forme, Flexbox,
-                        responsive design et media queries.
+                    <h3>JavaScript</h3>
+                    <p data-i18n="skillsJavaScript">
+                        Variables, fonctions, conditions, boucles,
+                        tableaux, événements, manipulation du DOM
+                        et formulaires interactifs.
+                    </p>
+
+                    <h3>React & Vite</h3>
+                    <p data-i18n="skillsReact">
+                        Composants React, useState, affichage
+                        dynamique, gestion des formulaires
+                        et connexion à une API.
                     </p>
                 </article>
 
+                <!-- PROGRAMMATION -->
                 <article class="competence-carte">
-                    <h2 data-i18n="skillsTools">Outils & environnement</h2>
+                    <h2 data-i18n="skillsProgramming">
+                        Programmation
+                    </h2>
+
+                    <h3>Python & Pygame</h3>
+                    <p data-i18n="skillsPython">
+                        Fonctions, conditions, boucles,
+                        manipulation de données et fichiers.
+                        Développement d'un jeu interactif
+                        avec Pygame.
+                    </p>
+
+                    <h3>Java</h3>
+                    <p data-i18n="skillsJava">
+                        Initiation à la syntaxe Java,
+                        méthodes, chaînes de caractères,
+                        concaténation et tests avec JShell.
+                    </p>
+
+                    <h3>Node.js</h3>
+                    <p data-i18n="skillsNode">
+                        Exécution de JavaScript côté serveur,
+                        modules, fonctions et exercices
+                        sur les tableaux et les chaînes.
+                    </p>
+                </article>
+
+                <!-- BACKEND ET API -->
+                <article class="competence-carte">
+                    <h2 data-i18n="skillsBackendTitle">
+                        Backend & API
+                    </h2>
+
+                    <h3>API REST & HTTP</h3>
+                    <p data-i18n="skillsAPI">
+                        Connexion d'un frontend React
+                        à une API REST, requêtes HTTP,
+                        échanges JSON et gestion des
+                        réponses du serveur.
+                    </p>
+
+                    <h3>Django REST</h3>
+                    <p data-i18n="skillsDjango">
+                        Découverte des endpoints Django REST,
+                        de l'authentification, des rôles,
+                        des permissions et des opérations CRUD
+                        dans le projet PYJOBS.
+                    </p>
+                </article>
+
+                <!-- OUTILS -->
+                <article class="competence-carte">
+                    <h2 data-i18n="skillsTools">
+                        Outils & environnement
+                    </h2>
 
                     <h3>Git & GitHub</h3>
                     <p data-i18n="skillsGit">
-                        Versionnement de projets, commits, gestion de dépôts
-                        et publication du code sur GitHub.
+                        Commits, branches, push, travail
+                        collaboratif, gestion des dépôts
+                        et déploiement sur GitHub Pages.
                     </p>
 
-                    <h3 data-i18n="skillsTerminalTitle">VS Code & terminal</h3>
+                    <h3>Linux & WSL</h3>
+                    <p data-i18n="skillsLinux">
+                        Utilisation du terminal Linux,
+                        navigation dans les dossiers,
+                        commandes de base et environnement
+                        de développement WSL.
+                    </p>
+
+                    <h3 data-i18n="skillsTerminalTitle">
+                        VS Code & terminal
+                    </h3>
                     <p data-i18n="skillsTerminal">
-                        Utilisation de Visual Studio Code, PowerShell et terminal
-                        pour développer et organiser mes projets.
+                        Développement avec Visual Studio Code,
+                        terminal, npm et outils de test.
                     </p>
                 </article>
 
+                <!-- COMPETENCES METIER -->
                 <article class="competence-carte">
-                    <h2 data-i18n="skillsBusiness">Gestion de projet & métier</h2>
+                    <h2 data-i18n="skillsBusiness">
+                        Gestion de projet & métier
+                    </h2>
 
-                    <h3 data-i18n="skillsProjectTitle">Gestion de projet</h3>
+                    <h3 data-i18n="skillsProjectTitle">
+                        Gestion de projet
+                    </h3>
                     <p data-i18n="skillsProject">
-                        Organisation, coordination d'équipes, suivi d'objectifs
+                        Coordination d'équipes, organisation,
+                        suivi d'objectifs, priorisation
                         et pilotage de projets.
                     </p>
 
-                    <h3 data-i18n="skillsNeedsTitle">Analyse des besoins</h3>
+                    <h3 data-i18n="skillsNeedsTitle">
+                        Analyse des besoins
+                    </h3>
                     <p data-i18n="skillsNeeds">
-                        Compréhension des problématiques métiers et traduction
-                        des besoins en objectifs et solutions.
+                        Identification des problématiques métiers,
+                        analyse des attentes et traduction
+                        des besoins en fonctionnalités.
+                    </p>
+
+                    <h3 data-i18n="skillsProductTitle">
+                        Conception produit
+                    </h3>
+                    <p data-i18n="skillsProduct">
+                        Définition d'un MVP, priorisation
+                        des fonctionnalités, analyse des risques
+                        et planification avec un diagramme de Gantt.
                     </p>
                 </article>
 
             </div>
 
+            <!-- APPRENTISSAGE -->
             <div class="competences-apprentissage">
 
-                <h2 data-i18n="skillsLearningTitle">Compétences en cours d'acquisition</h2>
+                <h2 data-i18n="skillsLearningTitle">
+                    Compétences en cours d'acquisition
+                </h2>
 
                 <p data-i18n="skillsLearningIntro">
-                    Ma formation à Epitech me permet d'élargir progressivement mes
-                    compétences vers de nouveaux domaines de l'informatique.
+                    Je consolide actuellement mes bases
+                    en développement et approfondis les
+                    technologies liées aux applications web,
+                    à la Data et à l'intelligence artificielle.
                 </p>
 
                 <div class="apprentissage-liste">
+                    <span>Java</span>
                     <span>Data</span>
-                    <span data-i18n="skillsAI">Intelligence Artificielle</span>
-                    <span>JavaScript</span>
-                    <span data-i18n="skillsITProject">Gestion de projet IT</span>
-                    <span data-i18n="skillsDigital">Transformation digitale</span>
+                    <span data-i18n="skillsAI">
+                        Intelligence Artificielle
+                    </span>
+                    <span>Django REST</span>
+                    <span data-i18n="skillsITProject">
+                        Gestion de projet IT
+                    </span>
+                    <span data-i18n="skillsDigital">
+                        Transformation digitale
+                    </span>
                 </div>
 
             </div>

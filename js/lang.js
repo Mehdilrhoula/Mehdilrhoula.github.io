@@ -291,3 +291,93 @@ try {
 }
 
 changeLanguage(savedLanguage);
+
+
+/* Traductions actualisées de la page Compétences */
+
+Object.assign(translations.fr, {
+    skillsIntro: "Les compétences techniques et professionnelles que je développe à Epitech, complétées par mon expérience en gestion de projet et en business.",
+
+    skillsDevelopment: "Développement web",
+
+    skillsHtml: "Structure HTML, Flexbox, CSS Grid, responsive design, media queries et bases de l'accessibilité.",
+
+    skillsJavaScript: "Variables, fonctions, conditions, boucles, tableaux, événements, manipulation du DOM et formulaires interactifs.",
+
+    skillsReact: "Composants React, useState, affichage dynamique, gestion des formulaires et connexion à une API.",
+
+    skillsProgramming: "Programmation",
+
+    skillsPython: "Fonctions, conditions, boucles, manipulation de données et fichiers. Développement d'un jeu interactif avec Pygame.",
+
+    skillsJava: "Initiation à la syntaxe Java, méthodes, chaînes de caractères, concaténation et tests avec JShell.",
+
+    skillsNode: "Exécution de JavaScript côté serveur, modules, fonctions et exercices sur les tableaux et les chaînes.",
+
+    skillsBackendTitle: "Backend & API",
+
+    skillsAPI: "Connexion d'un frontend React à une API REST, requêtes HTTP, échanges JSON et gestion des réponses du serveur.",
+
+    skillsDjango: "Découverte des endpoints Django REST, de l'authentification, des rôles, des permissions et des opérations CRUD dans le projet PYJOBS.",
+
+    skillsGit: "Commits, branches, push, travail collaboratif, gestion des dépôts et déploiement sur GitHub Pages.",
+
+    skillsLinux: "Utilisation du terminal Linux, navigation dans les dossiers, commandes de base et environnement de développement WSL.",
+
+    skillsTerminal: "Développement avec Visual Studio Code, terminal, npm et outils de test.",
+
+    skillsProject: "Coordination d'équipes, organisation, suivi d'objectifs, priorisation et pilotage de projets.",
+
+    skillsNeeds: "Identification des problématiques métiers, analyse des attentes et traduction des besoins en fonctionnalités.",
+
+    skillsProductTitle: "Conception produit",
+
+    skillsProduct: "Définition d'un MVP, priorisation des fonctionnalités, analyse des risques et planification avec un diagramme de Gantt.",
+
+    skillsLearningIntro: "Je consolide actuellement mes bases en développement et approfondis les technologies liées aux applications web, à la Data et à l'intelligence artificielle."
+});
+
+Object.assign(translations.en, {
+    skillsIntro: "Technical and professional skills I am developing at Epitech, combined with my background in project management and business.",
+
+    skillsDevelopment: "Web Development",
+
+    skillsHtml: "HTML structure, Flexbox, CSS Grid, responsive design, media queries and accessibility fundamentals.",
+
+    skillsJavaScript: "Variables, functions, conditions, loops, arrays, events, DOM manipulation and interactive forms.",
+
+    skillsReact: "React components, useState, dynamic rendering, form management and API integration.",
+
+    skillsProgramming: "Programming",
+
+    skillsPython: "Functions, conditions, loops, data manipulation and file handling. Development of an interactive game using Pygame.",
+
+    skillsJava: "Introduction to Java syntax, methods, strings, concatenation and testing with JShell.",
+
+    skillsNode: "Running JavaScript on the server side, modules, functions and exercises with arrays and strings.",
+
+    skillsBackendTitle: "Backend & APIs",
+
+    skillsAPI: "Connecting a React frontend to a REST API, HTTP requests, JSON data exchange and handling server responses.",
+
+    skillsDjango: "Introduction to Django REST endpoints, authentication, user roles, permissions and CRUD operations through the PYJOBS project.",
+
+    skillsGit: "Commits, branches, push, collaborative development, repository management and deployment using GitHub Pages.",
+
+    skillsLinux: "Using the Linux terminal, directory navigation, basic commands and the WSL development environment.",
+
+    skillsTerminal: "Development with Visual Studio Code, terminal, npm and testing tools.",
+
+    skillsProject: "Team coordination, organization, goal tracking, prioritization and project management.",
+
+    skillsNeeds: "Identifying business challenges, analyzing expectations and translating requirements into features.",
+
+    skillsProductTitle: "Product Design",
+
+    skillsProduct: "MVP definition, feature prioritization, risk analysis and planning with Gantt charts.",
+
+    skillsLearningIntro: "I am strengthening my development foundations while exploring web applications, Data and artificial intelligence technologies."
+});
+
+// Actualiser les textes avec les nouvelles traductions
+changeLanguage(savedLanguage);
