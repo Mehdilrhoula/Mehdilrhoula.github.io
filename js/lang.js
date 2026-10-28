@@ -381,3 +381,80 @@ Object.assign(translations.en, {
 
 // Actualiser les textes avec les nouvelles traductions
 changeLanguage(savedLanguage);
+
+
+/* MENU HAMBURGER MOBILE */
+
+function initMobileMenu() {
+    const nav = document.querySelector("header nav");
+
+    if (!nav) {
+        return;
+    }
+
+    const menuButton = document.createElement("button");
+
+    menuButton.type = "button";
+    menuButton.className = "menu-toggle";
+    menuButton.setAttribute("aria-label", "Ouvrir le menu");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-controls", "mobile-navigation");
+
+    menuButton.innerHTML = `
+        <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    `;
+
+    nav.id = "mobile-navigation";
+    nav.prepend(menuButton);
+
+    function closeMenu() {
+        nav.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Ouvrir le menu");
+    }
+
+    menuButton.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("menu-open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Fermer le menu" : "Ouvrir le menu"
+        );
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" &&
+            nav.classList.contains("menu-open")) {
+
+            closeMenu();
+            menuButton.focus();
+        }
+    });
+
+    document.addEventListener("click", event => {
+        if (!nav.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 700) {
+            closeMenu();
+        }
+    });
+}
+
+initMobileMenu();
