@@ -20,7 +20,7 @@ const translations = {
         // Projets
         projectsMetaDescription: "Découvrez les projets informatiques réalisés par Mehdi Lrhoula au cours de sa formation à Epitech.",
         projectsTitle: "Mes projets",
-        projectsIntroduction: "Découvrez les projets que j'ai réalisés au cours de ma formation et les compétences que j'ai développées à travers chacun d'entre eux.",
+        projectsIntroduction: "Une sélection de projets réalisés à Epitech et en autonomie, qui illustrent mes compétences en développement et en conception de produits numériques.",
         projectContextTitle: "Contexte et objectif",
         projectWorkTitle: "Ce que j'ai réalisé",
         projectLearningTitle: "Ce que j'ai appris",
@@ -28,11 +28,12 @@ const translations = {
         projectInProgress: "Projet en cours de conception.",
 
         pyjobsContext: "Développement d'une plateforme de recrutement dans le cadre de ma formation à Epitech. L'objectif était de créer une application web permettant aux entreprises de publier des offres d'emploi et aux candidats de postuler.",
-        pyjobsWork: "J'ai travaillé sur le frontend avec React et son intégration avec une API Django REST. Le projet comprend un système d'authentification, des espaces candidats et employeurs, la publication et la gestion d'annonces ainsi que le suivi des candidatures.",
-        pyjobsLearning: "Ce projet m'a permis de progresser en React, dans la communication entre un frontend et un backend, l'utilisation des API REST, la gestion des rôles utilisateurs et les tests fonctionnels. J'ai également découvert les enjeux du travail collaboratif avec Git.",
+        pyjobsWork: "J’ai développé des fonctionnalités du frontend React et intégré les échanges avec une API Django REST réalisée en équipe. J’ai travaillé sur les parcours candidat et employeur : consultation des offres, filtres de recherche, formulaires de candidature, authentification et tableaux de bord. J’ai également participé aux tests des permissions et des échanges frontend/backend.",
+        pyjobsLearning: "J’ai approfondi React (composants, états, formulaires), les appels API REST, la gestion des droits selon les rôles, les tests fonctionnels et la collaboration avec Git. J’ai appris à relier une interface à un serveur et à diagnostiquer les erreurs entre les deux.",
         pyjobsCaptionHome: "Accueil — Présentation de la plateforme et découverte des offres d'emploi.",
         pyjobsCaptionEmployer: "Espace employeur — Gestion des entreprises, des annonces et des candidatures reçues.",
         pyjobsCaptionCandidate: "Espace candidat — Consultation des candidatures et suivi de leur statut.",
+
         hangmanTitle: "Jeu du Pendu",
         hangmanContext: "Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation à Epitech. L'objectif était de mettre en pratique les fondamentaux de la programmation en développant une application interactive.",
         hangmanWork: "Le projet permet de sélectionner aléatoirement un mot, de gérer les lettres proposées par le joueur, les erreurs et les conditions de victoire ou de défaite. Une interface graphique a ensuite été développée avec Pygame.",
@@ -50,7 +51,18 @@ const translations = {
         frigoLearning: "Ce projet me permet de découvrir les premières étapes de conception d'un produit numérique, notamment l'analyse des besoins, la priorisation des fonctionnalités, la gestion des risques et l'organisation du travail en équipe.",
 
         progressTitle: "Ma progression",
-        progressDescription: "Ces projets illustrent ma progression dans le développement informatique et la gestion de projets numériques. Après avoir découvert Python, HTML et CSS, j'ai approfondi mes connaissances avec React, Django REST et les API. Je développe progressivement mes compétences techniques tout en m'appuyant sur mon expérience professionnelle en gestion de projet et en développement commercial.",
+        progressDescription: "Mes projets montrent une progression du HTML/CSS vers JavaScript, Python et les applications React connectées à une API. J’étudie aussi Java, Node.js et les fondamentaux de la programmation. Je complète cette pratique technique par mon expérience en gestion de projet, analyse des besoins et développement commercial.",
+
+        // Portfolio et ateliers
+        portfolioTitle: "Portfolio personnel",
+        portfolioContext: "Création d’un site personnel pour présenter mon parcours, mes projets et mes compétences aux recruteurs, avec une navigation accessible et une version française/anglaise.",
+        portfolioWork: "J’ai construit les pages en HTML et CSS, ajouté des interactions en JavaScript, mis en place un bouton FR/EN avec mémorisation de la langue et intégré le téléchargement du CV. J’ai publié le site sur GitHub Pages.",
+        portfolioLearning: "J’ai pratiqué la structuration d’un site multipage, la manipulation du DOM, les attributs d’accessibilité, le responsive design, Git et le déploiement web.",
+        viewWebsite: "Voir le site en ligne",
+        workshopsTitle: "Ateliers Java et JavaScript",
+        workshopsContext: "Exercices de programmation réalisés pendant les bootcamps Epitech pour consolider les bases des langages et la logique algorithmique.",
+        workshopsWork: "En JavaScript et Node.js, j’ai travaillé sur les fonctions, les tableaux, les comparaisons et le traitement de chaînes. En Java, j’ai commencé par les méthodes, la concaténation et les premiers tests en JShell.",
+        workshopsLearning: "J’apprends à lire le code étape par étape, à distinguer les types de données, à écrire des fonctions réutilisables et à tester les résultats dans le terminal.",
 
         // Compétences
         skillsMetaDescription: "Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation et de ses expériences.",
@@ -81,18 +93,15 @@ const translations = {
         experienceMissionTitle: "Mission",
         experienceAchievementsTitle: "Réalisations",
         experienceSkillsTitle: "Compétences développées",
-
         chariRole: "Chef de Projet",
         chariContext: "Startup technologique B2B spécialisée dans la digitalisation de la distribution de produits de grande consommation.",
         chariMission: "Lancement et développement de la filiale tunisienne à partir de zéro, avec la responsabilité du déploiement opérationnel de l'activité et de son développement sur le marché local.",
         chariAchievements: "Constitution et coordination d'une équipe commerciale et opérationnelle, développement de l'activité jusqu'à environ 500 clients et participation à la mise en place des processus nécessaires au fonctionnement de la filiale.",
         chariSkills: "Gestion de projet • Coordination d'équipe • Analyse des besoins • Déploiement opérationnel • Environnement startup",
-
         cmaContext: "Groupe international spécialisé dans le transport maritime et la logistique.",
         cmaMission: "Développement et gestion d'un portefeuille clients dans un environnement international, avec une expérience en Tunisie dans le cadre d'une mission VIE.",
         cmaAchievements: "Développement du portefeuille annuel d'environ 450 000 € à 785 000 €, acquisition régulière de nouveaux clients et suivi de l'activité à travers les outils CRM et le reporting.",
         cmaSkills: "Analyse de données commerciales • CRM & reporting • Gestion de portefeuille • Coordination internationale • Compréhension des enjeux métiers",
-
         hbContext: "Activité spécialisée dans l'achat et la revente de solutions de transport maritime et de services associés.",
         hbMission: "Gestion des achats de transport et coordination avec les différents partenaires afin de proposer des solutions adaptées aux besoins clients.",
         hbAchievements: "Consultation et négociation auprès des compagnies maritimes, analyse des offres spot et contractuelles et participation aux réponses aux appels d'offres.",
@@ -129,7 +138,7 @@ const translations = {
         // Projects
         projectsMetaDescription: "Discover the software and web development projects completed by Mehdi Lrhoula during his studies at Epitech.",
         projectsTitle: "My Projects",
-        projectsIntroduction: "Explore the projects I have completed throughout my studies and the skills I have developed through each experience.",
+        projectsIntroduction: "A selection of projects completed at Epitech and independently, showcasing my software development and digital product design skills.",
         projectContextTitle: "Background and Objectives",
         projectWorkTitle: "What I Built",
         projectLearningTitle: "What I Learned",
@@ -137,11 +146,12 @@ const translations = {
         projectInProgress: "Project currently in the design phase.",
 
         pyjobsContext: "Development of a recruitment platform as part of my studies at Epitech. The objective was to build a web application allowing companies to publish job opportunities and candidates to apply.",
-        pyjobsWork: "I worked on the React frontend and its integration with a Django REST API. The project includes authentication, candidate and employer dashboards, job posting and management features, as well as application tracking.",
-        pyjobsLearning: "This project helped me improve my React skills, understand frontend-backend communication, work with REST APIs, manage user roles and perform functional testing. I also gained experience in collaborative development using Git.",
+        pyjobsWork: "I developed React frontend features and integrated them with a Django REST API built as a team. I worked on candidate and employer journeys: browsing job listings, search filters, application forms, authentication and dashboards. I also contributed to testing permissions and frontend/backend communication.",
+        pyjobsLearning: "I strengthened my React knowledge (components, state and forms), REST API integration, role-based permissions, functional testing and Git collaboration. I learned how to connect a user interface to a server and troubleshoot issues between them.",
         pyjobsCaptionHome: "Home — Introduction to the platform and exploration of job opportunities.",
         pyjobsCaptionEmployer: "Employer dashboard — Manage companies, job postings and received applications.",
         pyjobsCaptionCandidate: "Candidate dashboard — View submitted applications and track their status.",
+
         hangmanTitle: "Hangman Game",
         hangmanContext: "Development of a Hangman game in Python as part of my studies at Epitech. The goal was to practice programming fundamentals by building an interactive application.",
         hangmanWork: "The game randomly selects a word, handles player guesses, tracks mistakes and determines win or loss conditions. A graphical interface was then developed using Pygame.",
@@ -159,7 +169,18 @@ const translations = {
         frigoLearning: "This project is helping me discover the early stages of digital product design, including requirements analysis, feature prioritization, risk management and teamwork.",
 
         progressTitle: "My Progress",
-        progressDescription: "These projects illustrate my progress in software development and digital project management. After learning the fundamentals of Python, HTML and CSS, I expanded my knowledge through React, Django REST and APIs. I am gradually building my technical skills while drawing on my professional background in project management and business development.",
+        progressDescription: "My projects show a progression from HTML/CSS to JavaScript, Python and React applications connected to an API. I am also learning Java, Node.js and programming fundamentals. I combine this technical practice with my background in project management, requirements analysis and business development.",
+
+        // Portfolio and workshops
+        portfolioTitle: "Personal Portfolio",
+        portfolioContext: "I built a personal website to introduce my background, projects and skills to recruiters, with accessible navigation and French/English content.",
+        portfolioWork: "I created the pages using HTML and CSS, added JavaScript interactions, implemented a FR/EN language switch with saved preferences and enabled CV downloads. I published the website using GitHub Pages.",
+        portfolioLearning: "I practiced multi-page website structure, DOM manipulation, accessibility attributes, responsive design, Git and web deployment.",
+        viewWebsite: "Visit the live website",
+        workshopsTitle: "Java and JavaScript Workshops",
+        workshopsContext: "Programming exercises completed during Epitech bootcamps to strengthen language fundamentals and algorithmic thinking.",
+        workshopsWork: "In JavaScript and Node.js, I practiced functions, arrays, comparisons and string processing. In Java, I started with methods, concatenation and initial tests using JShell.",
+        workshopsLearning: "I am learning to read code step by step, distinguish data types, write reusable functions and test results in the terminal.",
 
         // Skills
         skillsMetaDescription: "Discover Mehdi Lrhoula's technical and professional skills developed through his education, projects and work experience.",
@@ -190,18 +211,15 @@ const translations = {
         experienceMissionTitle: "Responsibilities",
         experienceAchievementsTitle: "Achievements",
         experienceSkillsTitle: "Skills Developed",
-
         chariRole: "Project Manager",
         chariContext: "A B2B technology startup specializing in the digitalization of consumer goods distribution.",
         chariMission: "Launching and developing the Tunisian subsidiary from scratch, overseeing operational deployment and business growth in the local market.",
         chariAchievements: "Building and coordinating a sales and operations team, growing the business to approximately 500 customers and helping establish the processes required to operate the subsidiary.",
         chariSkills: "Project Management • Team Coordination • Requirements Analysis • Operational Deployment • Startup Environment",
-
         cmaContext: "An international group specializing in maritime shipping and logistics.",
         cmaMission: "Developing and managing a customer portfolio in an international environment, including an international assignment in Tunisia under the French VIE program.",
         cmaAchievements: "Growing the annual customer portfolio from approximately €450,000 to €785,000, regularly acquiring new customers and monitoring business performance using CRM and reporting tools.",
         cmaSkills: "Sales Data Analysis • CRM & Reporting • Account Management • International Coordination • Business Understanding",
-
         hbContext: "A business specializing in the procurement and resale of maritime transport solutions and related services.",
         hbMission: "Managing freight procurement and coordinating with different partners to provide solutions tailored to customer needs.",
         hbAchievements: "Consulting and negotiating with shipping companies, analyzing spot and contractual offers and contributing to responses to tenders.",
@@ -219,6 +237,7 @@ const translations = {
     }
 };
 
+// Fonction de changement de langue
 function changeLanguage(lang) {
     const selectedLanguage = translations[lang] ? lang : "fr";
 
@@ -242,7 +261,6 @@ function changeLanguage(lang) {
 
     document.querySelectorAll(".lang-btn").forEach(button => {
         const isActive = button.dataset.lang === selectedLanguage;
-
         button.classList.toggle("active", isActive);
         button.setAttribute("aria-pressed", String(isActive));
     });
@@ -256,12 +274,14 @@ function changeLanguage(lang) {
     }
 }
 
+// Événements des boutons FR / EN
 document.querySelectorAll(".lang-btn").forEach(button => {
     button.addEventListener("click", () => {
         changeLanguage(button.dataset.lang);
     });
 });
 
+// Langue sauvegardée
 let savedLanguage = "fr";
 
 try {
