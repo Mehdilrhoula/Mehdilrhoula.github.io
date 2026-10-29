@@ -1,27 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
+    <!-- CONFIGURE LA PAGE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DECRIT LES PROJETS -->
     <meta name="description"
         content="Découvrez les projets informatiques réalisés par Mehdi Lrhoula au cours de sa formation à Epitech."
         data-i18n-content="projectsMetaDescription">
+
+    <!-- DEFINIT LE TITRE -->
     <title>Mes projets | Mehdi Lrhoula</title>
+
+    <!-- CHARGE LES STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ACTIVE LES TRADUCTIONS -->
     <script src="js/lang.js" defer></script>
+
+    <!-- ACTIVE LE CARROUSEL -->
     <script src="js/carousel.js" defer></script>
 </head>
 
 <body>
+
+    <!-- AFFICHE LA NAVIGATION -->
     <header>
         <nav aria-label="Navigation principale">
+
+            <!-- LIENS ENTRE LES PAGES -->
             <a href="index.html" data-i18n="navHome">Accueil</a>
             <a href="projets.html" data-i18n="navProjects" aria-current="page">Mes projets</a>
             <a href="competences.html" data-i18n="navSkills">Mes compétences</a>
             <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
             <a href="contact.html" data-i18n="navContact">Contact</a>
 
+            <!-- BOUTONS DES LANGUES -->
             <div class="lang-switch" role="group" aria-label="Choix de la langue">
                 <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
                 <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -29,8 +46,11 @@
         </nav>
     </header>
 
+    <!-- CONTENU PRINCIPAL -->
     <main>
         <section class="page-projets">
+
+            <!-- PRESENTE MES PROJETS -->
             <div class="titre-page">
                 <h1 data-i18n="projectsTitle">Mes projets</h1>
                 <p data-i18n="projectsIntroduction">
@@ -39,47 +59,69 @@
                 </p>
             </div>
 
-            <!-- PROJET 1 : PYJOBS -->
+            <!-- PROJET PYJOBS -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2>PYJOBS — Job Board</h2>
 
+                <!-- PRESENTE LES CAPTURES -->
                 <div class="projet-carousel" id="pyjobs-carousel" aria-label="Captures d'écran du projet PYJOBS">
+
+                    <!-- CAPTURE PAGE ACCUEIL -->
                     <figure class="carousel-slide">
                         <img src="images/projets/pyjobs-accueil.png"
                             alt="Page d'accueil de PYJOBS présentant la plateforme de recrutement" loading="lazy">
+
+                        <!-- DECRIT LA CAPTURE -->
                         <figcaption data-i18n="pyjobsCaptionHome">
                             Accueil — Présentation de la plateforme et découverte des offres d'emploi.
                         </figcaption>
                     </figure>
 
+                    <!-- CAPTURE ESPACE EMPLOYEUR -->
                     <figure class="carousel-slide" hidden>
                         <img src="images/projets/pyjobs-employeur.png"
                             alt="Tableau de bord employeur de PYJOBS avec gestion des entreprises et des annonces"
                             loading="lazy">
+
+                        <!-- DECRIT LA CAPTURE -->
                         <figcaption data-i18n="pyjobsCaptionEmployer">
                             Espace employeur — Gestion des entreprises, des annonces et des candidatures reçues.
                         </figcaption>
                     </figure>
 
+                    <!-- CAPTURE ESPACE CANDIDAT -->
                     <figure class="carousel-slide" hidden>
                         <img src="images/projets/pyjobs-candidat.png"
                             alt="Espace candidat PYJOBS affichant les candidatures et leur statut" loading="lazy">
+
+                        <!-- DECRIT LA CAPTURE -->
                         <figcaption data-i18n="pyjobsCaptionCandidate">
                             Espace candidat — Consultation des candidatures et suivi de leur statut.
                         </figcaption>
                     </figure>
 
+                    <!-- CONTROLE LE CARROUSEL -->
                     <div class="carousel-controls">
+
+                        <!-- AFFICHE IMAGE PRECEDENTE -->
                         <button type="button" class="carousel-prev" aria-label="Capture précédente">&#8592;</button>
+
+                        <!-- AFFICHE LE COMPTEUR -->
                         <span class="carousel-counter" aria-live="polite">1 / 3</span>
+
+                        <!-- AFFICHE IMAGE SUIVANTE -->
                         <button type="button" class="carousel-next" aria-label="Capture suivante">&#8594;</button>
                     </div>
                 </div>
 
+                <!-- LISTE LES TECHNOLOGIES -->
                 <p class="projet-technologies">
                     React • JavaScript • Vite • API REST Django • Git
                 </p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="pyjobsContext">
                     Développement d'une plateforme de recrutement dans le cadre de ma formation à Epitech. L'objectif
@@ -87,6 +129,7 @@
                     candidats de postuler.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="pyjobsWork">
                     J’ai développé des fonctionnalités du frontend React et intégré les échanges avec une API Django
@@ -95,6 +138,7 @@
                     également participé aux tests des permissions et des échanges frontend/backend.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="pyjobsLearning">
                     J’ai approfondi React (composants, états, formulaires), les appels API REST, la gestion des droits
@@ -102,6 +146,7 @@
                     interface à un serveur et à diagnostiquer les erreurs entre les deux.
                 </p>
 
+                <!-- LIEN VERS GITHUB -->
                 <div class="projet-liens">
                     <a href="https://github.com/Mehdilrhoula/PYJOBS" target="_blank" rel="noopener noreferrer">
                         Voir le code
@@ -109,26 +154,36 @@
                 </div>
             </article>
 
-            <!-- PROJET 2 : JEU DU PENDU -->
+            <!-- PROJET JEU DU PENDU -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2 data-i18n="hangmanTitle">Jeu du Pendu</h2>
 
+                <!-- PRESENTE LA DEMONSTRATION -->
                 <div class="projet-media">
+
+                    <!-- AFFICHE LA VIDEO -->
                     <video class="projet-video" controls preload="metadata" playsinline
                         aria-label="Démonstration du jeu du Pendu développé avec Python et Pygame">
+
+                        <!-- CHARGE LE FICHIER VIDEO -->
                         <source src="Videos/pendu-demo.mp4" type="video/mp4">
                         Votre navigateur ne prend pas en charge la lecture vidéo.
                     </video>
                 </div>
 
+                <!-- LISTE LES TECHNOLOGIES -->
                 <p class="projet-technologies">Python • Pygame</p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="hangmanContext">
                     Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation à Epitech. L'objectif était de
                     mettre en pratique les fondamentaux de la programmation en développant une application interactive.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="hangmanWork">
                     Le projet permet de sélectionner aléatoirement un mot, de gérer les lettres proposées par le joueur,
@@ -136,12 +191,14 @@
                     développée avec Pygame.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="hangmanLearning">
                     Ce projet m'a permis de progresser dans l'utilisation des fonctions, des conditions, des boucles,
                     des fichiers et dans l'organisation générale d'un programme Python.
                 </p>
 
+                <!-- LIEN VERS GITHUB -->
                 <div class="projet-liens">
                     <a href="https://github.com/Mehdilrhoula/Hangman-Pygame" target="_blank" rel="noopener noreferrer"
                         data-i18n="viewGithub">
@@ -150,11 +207,16 @@
                 </div>
             </article>
 
-            <!-- PROJET 3 : CODINGPEDIA -->
+            <!-- PROJET CODINGPEDIA -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2>CodingPedia</h2>
+
+                <!-- LISTE LES TECHNOLOGIES -->
                 <p class="projet-technologies">HTML • CSS</p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="codingContext">
                     Réalisation d'un site web dans le cadre de ma formation à Epitech. L'objectif était de découvrir les
@@ -162,6 +224,7 @@
                     avec CSS.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="codingWork">
                     J'ai créé plusieurs pages web en utilisant les principales balises HTML et les propriétés CSS pour
@@ -169,12 +232,14 @@
                     navigation et l'adaptation de l'affichage à différentes tailles d'écran.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="codingLearning">
                     Ce projet m'a permis de mieux comprendre la séparation entre la structure HTML et la mise en forme
                     CSS, ainsi que l'utilisation de Flexbox et des media queries pour créer des interfaces responsives.
                 </p>
 
+                <!-- EXPLIQUE MA PROGRESSION -->
                 <h3 data-i18n="codingProgressTitle">Ma progression</h3>
                 <p data-i18n="codingProgress">
                     CodingPedia a évolué progressivement au fil de plusieurs exercices. J'ai commencé par construire la
@@ -182,6 +247,7 @@
                     l'adaptation de l'interface aux différentes tailles d'écran.
                 </p>
 
+                <!-- LIEN VERS GITHUB -->
                 <div class="projet-liens">
                     <a href="https://github.com/Mehdilrhoula/CodingPedia" target="_blank" rel="noopener noreferrer"
                         data-i18n="viewGithub">
@@ -190,13 +256,18 @@
                 </div>
             </article>
 
-            <!-- PROJET 4 : FRIGORITHM -->
+            <!-- PROJET FRIGORITHM -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2>Frigorithm — Smart Fridge</h2>
+
+                <!-- PRESENTE LES TECHNOLOGIES -->
                 <p class="projet-technologies" data-i18n="frigoTechnologies">
                     Conception produit • Gestion de projet • Gantt
                 </p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="frigoContext">
                     Projet de conception d'un réfrigérateur intelligent réalisé en équipe dans le cadre de ma formation
@@ -204,6 +275,7 @@
                     le gaspillage et de faciliter l'organisation des repas.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="frigoWork">
                     Avec mon équipe, nous avons défini les fonctionnalités envisagées : gestion des stocks, suivi des
@@ -211,6 +283,7 @@
                     également sur le cadrage du projet, ses priorités, ses risques et son diagramme de Gantt.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="frigoLearning">
                     Ce projet me permet de découvrir les premières étapes de conception d'un produit numérique,
@@ -218,24 +291,31 @@
                     l'organisation du travail en équipe.
                 </p>
 
+                <!-- INDIQUE LE STATUT -->
                 <p data-i18n="projectInProgress">
                     Projet en cours de conception.
                 </p>
             </article>
 
-            <!-- PROJET 5 : PORTFOLIO -->
+            <!-- PROJET PORTFOLIO -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2 data-i18n="portfolioTitle">Portfolio personnel</h2>
+
+                <!-- LISTE LES TECHNOLOGIES -->
                 <p class="projet-technologies">
                     HTML • CSS • JavaScript • GitHub Pages
                 </p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="portfolioContext">
                     Création d’un site personnel pour présenter mon parcours, mes projets et mes compétences aux
                     recruteurs, avec une navigation accessible et une version française/anglaise.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="portfolioWork">
                     J’ai construit les pages en HTML et CSS, ajouté des interactions en JavaScript, mis en place un
@@ -243,12 +323,14 @@
                     sur GitHub Pages.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="portfolioLearning">
                     J’ai pratiqué la structuration d’un site multipage, la manipulation du DOM, les attributs
                     d’accessibilité, le responsive design, Git et le déploiement web.
                 </p>
 
+                <!-- LIEN VERS LE SITE -->
                 <div class="projet-liens">
                     <a href="https://mehdilrhoula.github.io/" target="_blank" rel="noopener noreferrer"
                         data-i18n="viewWebsite">
@@ -257,19 +339,25 @@
                 </div>
             </article>
 
-            <!-- PROJET 6 : BOOTCAMPS -->
+            <!-- PROJET ATELIERS PROGRAMMATION -->
             <article class="carte-projet">
+
+                <!-- AFFICHE LE NOM -->
                 <h2 data-i18n="workshopsTitle">Ateliers Java et JavaScript</h2>
+
+                <!-- LISTE LES TECHNOLOGIES -->
                 <p class="projet-technologies">
                     Java • JavaScript • Node.js • JShell
                 </p>
 
+                <!-- EXPLIQUE LE CONTEXTE -->
                 <h3 data-i18n="projectContextTitle">Contexte et objectif</h3>
                 <p data-i18n="workshopsContext">
                     Exercices de programmation réalisés pendant les bootcamps Epitech pour consolider les bases des
                     langages et la logique algorithmique.
                 </p>
 
+                <!-- DETAILLE MON TRAVAIL -->
                 <h3 data-i18n="projectWorkTitle">Ce que j'ai réalisé</h3>
                 <p data-i18n="workshopsWork">
                     En JavaScript et Node.js, j’ai travaillé sur les fonctions, les tableaux, les comparaisons et le
@@ -277,6 +365,7 @@
                     tests en JShell.
                 </p>
 
+                <!-- PRESENTE MES APPRENTISSAGES -->
                 <h3 data-i18n="projectLearningTitle">Ce que j'ai appris</h3>
                 <p data-i18n="workshopsLearning">
                     J’apprends à lire le code étape par étape, à distinguer les types de données, à écrire des fonctions
@@ -284,9 +373,13 @@
                 </p>
             </article>
 
-            <!-- PROGRESSION -->
+            <!-- RESUME MA PROGRESSION -->
             <section class="progression">
+
+                <!-- AFFICHE LE TITRE -->
                 <h2 data-i18n="progressTitle">Ma progression</h2>
+
+                <!-- EXPLIQUE MES APPRENTISSAGES -->
                 <p data-i18n="progressDescription">
                     Mes projets montrent une progression du HTML/CSS vers JavaScript, Python et les applications React
                     connectées à une API. J’étudie aussi Java, Node.js et les fondamentaux de la programmation. Je
@@ -294,6 +387,7 @@
                     développement commercial.
                 </p>
             </section>
+
         </section>
     </main>
 </body>

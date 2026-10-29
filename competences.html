@@ -3,23 +3,32 @@
 <html lang="fr">
 
 <head>
+    <!-- CONFIGURE LA PAGE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- DECRIT LA PAGE -->
     <meta name="description"
         content="Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation à Epitech et de ses expériences."
         data-i18n-content="skillsMetaDescription">
 
+    <!-- DEFINIT LE TITRE -->
     <title>Mes compétences | Mehdi Lrhoula</title>
 
+    <!-- CHARGE LES STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ACTIVE LES TRADUCTIONS -->
     <script src="js/lang.js" defer></script>
 </head>
 
 <body>
 
+    <!-- AFFICHE LA NAVIGATION -->
     <header>
         <nav aria-label="Navigation principale">
+
+            <!-- LIENS ENTRE LES PAGES -->
             <a href="index.html" data-i18n="navHome">Accueil</a>
             <a href="projets.html" data-i18n="navProjects">Mes projets</a>
             <a href="competences.html" data-i18n="navSkills"
@@ -27,21 +36,27 @@
             <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
             <a href="contact.html" data-i18n="navContact">Contact</a>
 
+            <!-- PERMET LE CHANGEMENT LANGUE -->
             <div class="lang-switch" role="group"
                 aria-label="Choix de la langue">
+
                 <button type="button" class="lang-btn active"
                     data-lang="fr" aria-pressed="true">FR</button>
+
                 <button type="button" class="lang-btn"
                     data-lang="en" aria-pressed="false">EN</button>
             </div>
         </nav>
     </header>
 
+    <!-- CONTENU PRINCIPAL -->
     <main>
         <section class="page-competences">
 
+            <!-- PRESENTE MES COMPETENCES -->
             <div class="titre-page">
                 <h1 data-i18n="skillsTitle">Mes compétences</h1>
+
                 <p data-i18n="skillsIntro">
                     Les compétences techniques et professionnelles
                     que je développe à Epitech, complétées par
@@ -49,14 +64,16 @@
                 </p>
             </div>
 
+            <!-- ORGANISE LES CARTES -->
             <div class="competences-grille">
 
-                <!-- DEVELOPPEMENT WEB -->
+                <!-- PRESENTE LE DEVELOPPEMENT WEB -->
                 <article class="competence-carte">
                     <h2 data-i18n="skillsDevelopment">
                         Développement web
                     </h2>
 
+                    <!-- PRESENTE HTML ET CSS -->
                     <h3>HTML5 & CSS3</h3>
                     <p data-i18n="skillsHtml">
                         Structure HTML, Flexbox, CSS Grid,
@@ -64,6 +81,7 @@
                         et bases de l'accessibilité.
                     </p>
 
+                    <!-- PRESENTE MES BASES JAVASCRIPT -->
                     <h3>JavaScript</h3>
                     <p data-i18n="skillsJavaScript">
                         Variables, fonctions, conditions, boucles,
@@ -71,6 +89,7 @@
                         et formulaires interactifs.
                     </p>
 
+                    <!-- PRESENTE REACT ET VITE -->
                     <h3>React & Vite</h3>
                     <p data-i18n="skillsReact">
                         Composants React, useState, affichage
@@ -79,12 +98,13 @@
                     </p>
                 </article>
 
-                <!-- PROGRAMMATION -->
+                <!-- PRESENTE MES LANGAGES -->
                 <article class="competence-carte">
                     <h2 data-i18n="skillsProgramming">
                         Programmation
                     </h2>
 
+                    <!-- PRESENTE PYTHON ET PYGAME -->
                     <h3>Python & Pygame</h3>
                     <p data-i18n="skillsPython">
                         Fonctions, conditions, boucles,
@@ -93,6 +113,7 @@
                         avec Pygame.
                     </p>
 
+                    <!-- PRESENTE MES BASES JAVA -->
                     <h3>Java</h3>
                     <p data-i18n="skillsJava">
                         Initiation à la syntaxe Java,
@@ -100,6 +121,7 @@
                         concaténation et tests avec JShell.
                     </p>
 
+                    <!-- PRESENTE MES BASES NODE -->
                     <h3>Node.js</h3>
                     <p data-i18n="skillsNode">
                         Exécution de JavaScript côté serveur,
@@ -108,12 +130,13 @@
                     </p>
                 </article>
 
-                <!-- BACKEND ET API -->
+                <!-- PRESENTE BACKEND ET API -->
                 <article class="competence-carte">
                     <h2 data-i18n="skillsBackendTitle">
                         Backend & API
                     </h2>
 
+                    <!-- PRESENTE LES ECHANGES HTTP -->
                     <h3>API REST & HTTP</h3>
                     <p data-i18n="skillsAPI">
                         Connexion d'un frontend React
@@ -122,6 +145,7 @@
                         réponses du serveur.
                     </p>
 
+                    <!-- PRESENTE DJANGO REST -->
                     <h3>Django REST</h3>
                     <p data-i18n="skillsDjango">
                         Découverte des endpoints Django REST,
@@ -131,12 +155,13 @@
                     </p>
                 </article>
 
-                <!-- OUTILS -->
+                <!-- PRESENTE MES OUTILS -->
                 <article class="competence-carte">
                     <h2 data-i18n="skillsTools">
                         Outils & environnement
                     </h2>
 
+                    <!-- PRESENTE LE VERSIONNEMENT -->
                     <h3>Git & GitHub</h3>
                     <p data-i18n="skillsGit">
                         Commits, branches, push, travail
@@ -144,6 +169,7 @@
                         et déploiement sur GitHub Pages.
                     </p>
 
+                    <!-- PRESENTE MON ENVIRONNEMENT LINUX -->
                     <h3>Linux & WSL</h3>
                     <p data-i18n="skillsLinux">
                         Utilisation du terminal Linux,
@@ -152,6 +178,7 @@
                         de développement WSL.
                     </p>
 
+                    <!-- PRESENTE MON EDITEUR -->
                     <h3 data-i18n="skillsTerminalTitle">
                         VS Code & terminal
                     </h3>
@@ -161,12 +188,13 @@
                     </p>
                 </article>
 
-                <!-- COMPETENCES METIER -->
+                <!-- PRESENTE MES COMPETENCES METIER -->
                 <article class="competence-carte">
                     <h2 data-i18n="skillsBusiness">
                         Gestion de projet & métier
                     </h2>
 
+                    <!-- PRESENTE LA GESTION PROJET -->
                     <h3 data-i18n="skillsProjectTitle">
                         Gestion de projet
                     </h3>
@@ -176,6 +204,7 @@
                         et pilotage de projets.
                     </p>
 
+                    <!-- PRESENTE ANALYSE DES BESOINS -->
                     <h3 data-i18n="skillsNeedsTitle">
                         Analyse des besoins
                     </h3>
@@ -185,6 +214,7 @@
                         des besoins en fonctionnalités.
                     </p>
 
+                    <!-- PRESENTE LA CONCEPTION PRODUIT -->
                     <h3 data-i18n="skillsProductTitle">
                         Conception produit
                     </h3>
@@ -197,13 +227,15 @@
 
             </div>
 
-            <!-- APPRENTISSAGE -->
+            <!-- PRESENTE MES APPRENTISSAGES -->
             <div class="competences-apprentissage">
 
+                <!-- AFFICHE MES OBJECTIFS -->
                 <h2 data-i18n="skillsLearningTitle">
                     Compétences en cours d'acquisition
                 </h2>
 
+                <!-- EXPLIQUE MA PROGRESSION -->
                 <p data-i18n="skillsLearningIntro">
                     Je consolide actuellement mes bases
                     en développement et approfondis les
@@ -211,6 +243,7 @@
                     à la Data et à l'intelligence artificielle.
                 </p>
 
+                <!-- LISTE LES TECHNOLOGIES -->
                 <div class="apprentissage-liste">
                     <span>Java</span>
                     <span>Data</span>

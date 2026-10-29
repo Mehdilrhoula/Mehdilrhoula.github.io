@@ -1,5 +1,8 @@
 
-/* Portfolio Mehdi Lrhoula — Design harmonisé */
+/* PORTFOLIO MEHDI LRHOULA */
+/* CENTRALISE LES STYLES */
+
+/* DEFINIT LES COULEURS */
 :root {
   color-scheme: light;
   --navy: #101d38;
@@ -17,14 +20,17 @@
   --container: 1120px;
 }
 
+/* CALCULE LES DIMENSIONS */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* FLUIDIFIE LE DEFILEMENT */
 html {
   scroll-behavior: smooth;
 }
 
+/* DEFINIT LE STYLE GENERAL */
 body {
   margin: 0;
   min-width: 320px;
@@ -35,24 +41,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ADAPTE LES MEDIAS */
 img, video {
   max-width: 100%;
 }
 
+/* COLORE LES LIENS */
 a {
   color: var(--blue);
 }
 
+/* UNIFORMISE LES POLICES */
 button, input, textarea {
   font: inherit;
 }
 
+/* PERSONNALISE LA SELECTION */
 ::selection {
   background: #c9dfff;
   color: var(--navy);
 }
 
 /* NAVIGATION COMMUNE */
+/* ORGANISE LE MENU */
 
 header {
   background: var(--navy);
@@ -67,6 +78,7 @@ nav {
   gap: 12px 24px;
 }
 
+/* STYLISE LES LIENS */
 nav a {
   color: #f5f8ff;
   text-decoration: none;
@@ -77,12 +89,14 @@ nav a {
   transition: color .2s ease, border-color .2s ease;
 }
 
+/* SIGNALE LA PAGE ACTIVE */
 nav a:hover,
 nav a[aria-current="page"] {
   color: #a8caff;
   border-bottom-color: #70a8ff;
 }
 
+/* REGROUPE LES LANGUES */
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -92,6 +106,7 @@ nav a[aria-current="page"] {
   border-radius: 10px;
 }
 
+/* STYLISE LES BOUTONS */
 .lang-btn {
   border: 0;
   background: transparent;
@@ -104,16 +119,19 @@ nav a[aria-current="page"] {
   transition: background-color .2s ease;
 }
 
+/* REAGIT AU SURVOL */
 .lang-btn:hover {
   background: rgba(255,255,255,.14);
 }
 
+/* INDIQUE LA LANGUE ACTIVE */
 .lang-btn.active {
   background: var(--blue);
   color: #fff;
 }
 
-/* MISE EN PAGE ET TITRES PARTAGÉS */
+/* MISE EN PAGE COMMUNE */
+/* UNIFORMISE LES PAGES */
 
 .page-projets,
 .page-competences,
@@ -123,12 +141,14 @@ nav a[aria-current="page"] {
   padding: 72px max(22px, calc((100vw - var(--container)) / 2)) 100px;
 }
 
+/* CENTRE LES TITRES */
 .titre-page {
   max-width: 800px;
   margin: 0 auto 46px;
   text-align: center;
 }
 
+/* STYLISE LES TITRES */
 .titre-page h1 {
   margin: 0 0 13px;
   font-size: clamp(2.1rem, 4vw, 3rem);
@@ -137,6 +157,7 @@ nav a[aria-current="page"] {
   color: var(--navy);
 }
 
+/* STYLISE LES DESCRIPTIONS */
 .titre-page p {
   max-width: 720px;
   margin: 0 auto;
@@ -145,7 +166,9 @@ nav a[aria-current="page"] {
 }
 
 /* ACCUEIL */
+/* PRESENTE MON PROFIL */
 
+/* DISPOSE LA PRESENTATION */
 .hero {
   max-width: 1440px;
   min-height: min(800px, 85vh);
@@ -157,11 +180,13 @@ nav a[aria-current="page"] {
   gap: clamp(30px, 6vw, 90px);
 }
 
+/* POSITIONNE MA PHOTO */
 .hero-photo {
   flex: 0 1 380px;
   text-align: center;
 }
 
+/* AFFICHE MA PHOTO */
 .hero-photo img {
   display: block;
   width: min(100%, 345px);
@@ -174,11 +199,13 @@ nav a[aria-current="page"] {
   box-shadow: 0 16px 50px rgba(16,29,56,.13);
 }
 
+/* ORGANISE MON INTRODUCTION */
 .hero-contenu {
   flex: 1 1 500px;
   max-width: 690px;
 }
 
+/* STYLISE MON INTRODUCTION */
 .hero-intro {
   margin: 0 0 8px;
   color: var(--blue-dark);
@@ -186,6 +213,7 @@ nav a[aria-current="page"] {
   font-size: 1.05rem;
 }
 
+/* AFFICHE MON NOM */
 .hero-contenu h1 {
   margin: 0 0 15px;
   font-size: clamp(2.55rem, 5vw, 4.2rem);
@@ -194,6 +222,7 @@ nav a[aria-current="page"] {
   color: var(--navy);
 }
 
+/* AFFICHE MON POSITIONNEMENT */
 .hero-contenu h2 {
   margin: 0 0 25px;
   color: var(--navy-light);
@@ -202,12 +231,14 @@ nav a[aria-current="page"] {
   line-height: 1.4;
 }
 
+/* STYLISE MA DESCRIPTION */
 .hero-contenu p {
   color: var(--muted);
   font-size: 1.05rem;
   margin: 0 0 18px;
 }
 
+/* REGROUPE LES BOUTONS */
 .hero-liens {
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +246,7 @@ nav a[aria-current="page"] {
   margin-top: 29px;
 }
 
+/* STYLISE LES BOUTONS */
 .hero-liens a,
 .projet-liens a {
   display: inline-flex;
@@ -232,6 +264,7 @@ nav a[aria-current="page"] {
   transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
+/* ANIME LES BOUTONS */
 .hero-liens a:hover,
 .projet-liens a:hover {
   background: var(--blue-dark);
@@ -240,7 +273,9 @@ nav a[aria-current="page"] {
 }
 
 /* PROJETS */
+/* PRESENTE MES REALISATIONS */
 
+/* CREE LES CADRES */
 .carte-projet,
 .competence-carte,
 .experience-carte,
@@ -251,12 +286,14 @@ nav a[aria-current="page"] {
   box-shadow: var(--shadow);
 }
 
+/* ORGANISE CHAQUE PROJET */
 .carte-projet {
   max-width: 980px;
   margin: 0 auto 28px;
   padding: clamp(24px, 4vw, 44px);
 }
 
+/* STYLISE LES TITRES */
 .carte-projet h2 {
   color: var(--navy);
   margin: 0 0 14px;
@@ -264,17 +301,20 @@ nav a[aria-current="page"] {
   letter-spacing: -.02em;
 }
 
+/* STYLISE LES SOUS-TITRES */
 .carte-projet h3 {
   margin: 27px 0 8px;
   font-size: 1.05rem;
   color: var(--navy);
 }
 
+/* ESPACE LES DESCRIPTIONS */
 .carte-projet p {
   line-height: 1.75;
   margin-top: 0;
 }
 
+/* AFFICHE LES TECHNOLOGIES */
 .projet-technologies {
   display: inline-block;
   max-width: 100%;
@@ -286,10 +326,12 @@ nav a[aria-current="page"] {
   font-weight: 750;
 }
 
+/* ESPACE LES LIENS */
 .projet-liens {
   margin-top: 26px;
 }
 
+/* VALORISE MON APPRENTISSAGE */
 .progression,
 .competences-apprentissage {
   background: var(--navy);
@@ -299,17 +341,20 @@ nav a[aria-current="page"] {
   box-shadow: var(--shadow);
 }
 
+/* POSITIONNE MA PROGRESSION */
 .progression {
   max-width: 980px;
   margin: 48px auto 0;
 }
 
+/* STYLISE LES TITRES */
 .progression h2,
 .competences-apprentissage h2 {
   margin: 0 0 16px;
   font-size: clamp(1.5rem, 3vw, 1.9rem);
 }
 
+/* AMELIORE LA LISIBILITE */
 .progression p,
 .competences-apprentissage p {
   margin: 0;
@@ -317,8 +362,10 @@ nav a[aria-current="page"] {
   line-height: 1.75;
 }
 
-/* COMPÉTENCES */
+/* COMPETENCES */
+/* PRESENTE MES SAVOIR-FAIRE */
 
+/* ORGANISE LA GRILLE */
 .competences-grille {
   max-width: var(--container);
   margin: 0 auto;
@@ -327,11 +374,13 @@ nav a[aria-current="page"] {
   gap: 22px;
 }
 
+/* ESPACE LES COMPETENCES */
 .competence-carte {
   min-width: 0;
   padding: 29px;
 }
 
+/* STYLISE LES CATEGORIES */
 .competence-carte h2 {
   margin: 0 0 24px;
   color: var(--blue-dark);
@@ -339,16 +388,19 @@ nav a[aria-current="page"] {
   line-height: 1.3;
 }
 
+/* STYLISE LES SOUS-CATEGORIES */
 .competence-carte h3 {
   margin: 22px 0 7px;
   color: var(--navy);
   font-size: 1.01rem;
 }
 
+/* ALIGNE LE PREMIER TITRE */
 .competence-carte h3:first-of-type {
   margin-top: 0;
 }
 
+/* DECRIT MES COMPETENCES */
 .competence-carte p {
   margin: 0;
   color: var(--muted);
@@ -356,21 +408,25 @@ nav a[aria-current="page"] {
   font-size: .96rem;
 }
 
+/* PRESENTE MES APPRENTISSAGES */
 .competences-apprentissage {
   max-width: var(--container);
   margin: 42px auto 0;
 }
 
+/* ESPACE LES PARAGRAPHES */
 .competences-apprentissage p {
   margin-bottom: 22px;
 }
 
+/* ORGANISE LES TECHNOLOGIES */
 .apprentissage-liste {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
+/* STYLISE LES ETIQUETTES */
 .apprentissage-liste span {
   padding: 8px 14px;
   border: 1px solid rgba(255,255,255,.28);
@@ -381,18 +437,22 @@ nav a[aria-current="page"] {
   font-weight: 650;
 }
 
-/* EXPÉRIENCES */
+/* EXPERIENCES */
+/* PRESENTE MON PARCOURS */
 
+/* CENTRE LES EXPERIENCES */
 .experiences-liste {
   max-width: 980px;
   margin: auto;
 }
 
+/* SEPARE LES EXPERIENCES */
 .experience-carte {
   padding: clamp(24px, 4vw, 40px);
   margin-bottom: 26px;
 }
 
+/* ORGANISE LES EN-TETES */
 .experience-entete {
   display: flex;
   align-items: flex-start;
@@ -401,76 +461,90 @@ nav a[aria-current="page"] {
   margin-bottom: 23px;
 }
 
+/* STYLISE LES ENTREPRISES */
 .experience-entete h2 {
   margin: 0 0 5px;
   font-size: clamp(1.45rem, 3vw, 1.8rem);
   color: var(--navy);
 }
 
+/* STYLISE LES POSTES */
 .experience-entete h3 {
   margin: 0;
   color: var(--blue-dark);
   font-size: 1.06rem;
 }
 
+/* AFFICHE LES DATES */
 .experience-entete span {
   flex-shrink: 0;
   font-weight: 700;
   color: var(--muted);
 }
 
+/* STYLISE LES MISSIONS */
 .experience-carte > h3 {
   margin: 24px 0 7px;
   font-size: 1.05rem;
 }
 
+/* ESPACE LES DESCRIPTIONS */
 .experience-carte p {
   margin-top: 0;
   line-height: 1.75;
 }
 
+/* DISTINGUE LE CONTEXTE */
 .experience-contexte {
   color: var(--muted);
   font-style: italic;
 }
 
 /* CONTACT */
+/* FACILITE LA PRISE CONTACT */
 
+/* AFFICHE MES COORDONNEES */
 .contact-direct {
   max-width: 760px;
   margin: 0 auto 24px;
   text-align: center;
 }
 
+/* STYLISE LES COORDONNEES */
 .contact-direct p {
   margin: 0;
   line-height: 1.7;
 }
 
+/* MET EN VALEUR */
 .contact-direct a {
   color: var(--blue-dark);
   font-weight: 750;
   text-underline-offset: 3px;
 }
 
+/* PRESENTE LE FORMULAIRE */
 .formulaire-contact {
   max-width: 760px;
   margin: 0 auto;
   padding: clamp(24px, 4vw, 40px);
 }
 
+/* ORGANISE LES CHAMPS */
 .champ-formulaire {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
+/* STYLISE LES LIBELLES */
 .champ-formulaire label {
   margin-bottom: 8px;
   color: var(--navy);
   font-weight: 700;
 }
 
+/* STYLISE LES SAISIES */
 .champ-formulaire input,
 .champ-formulaire textarea {
   width: 100%;
@@ -483,11 +557,13 @@ nav a[aria-current="page"] {
   transition: border-color .2s ease, box-shadow .2s ease;
 }
 
+/* AGRANDIT LES MESSAGES */
 .champ-formulaire textarea {
   min-height: 140px;
   resize: vertical;
 }
 
+/* SIGNALE LE CHAMP ACTIF */
 .champ-formulaire input:focus,
 .champ-formulaire textarea:focus {
   outline: 0;
@@ -495,6 +571,7 @@ nav a[aria-current="page"] {
   box-shadow: 0 0 0 3px rgba(23,105,219,.16);
 }
 
+/* STYLISE LE BOUTON */
 .formulaire-contact button {
   padding: 12px 22px;
   background: var(--navy);
@@ -506,19 +583,23 @@ nav a[aria-current="page"] {
   transition: background-color .2s ease, transform .2s ease;
 }
 
+/* ANIME LE BOUTON */
 .formulaire-contact button:hover {
   background: var(--blue-dark);
   transform: translateY(-2px);
 }
 
-/* VIDÉOS ET CARROUSEL PYJOBS */
+/* VIDEOS ET CARROUSEL PYJOBS */
+/* PRESENTE MES DEMONSTRATIONS */
 
+/* POSITIONNE LES MEDIAS */
 .projet-media,
 .projet-carousel {
   width: 100%;
   margin: 23px 0;
 }
 
+/* AFFICHE LES VIDEOS */
 .projet-video {
   display: block;
   width: 100%;
@@ -528,15 +609,18 @@ nav a[aria-current="page"] {
   border: 1px solid var(--border);
 }
 
+/* CENTRE LES DIAPOSITIVES */
 .carousel-slide {
   margin: 0;
   text-align: center;
 }
 
+/* MASQUE LES DIAPOSITIVES */
 .carousel-slide[hidden] {
   display: none;
 }
 
+/* AFFICHE LES CAPTURES */
 .carousel-slide img {
   display: block;
   max-width: 100%;
@@ -549,6 +633,7 @@ nav a[aria-current="page"] {
   border: 1px solid var(--border);
 }
 
+/* DECRIT LES CAPTURES */
 .carousel-slide figcaption {
   margin-top: 13px;
   color: var(--muted);
@@ -556,6 +641,7 @@ nav a[aria-current="page"] {
   line-height: 1.6;
 }
 
+/* ORGANISE LA NAVIGATION */
 .carousel-controls {
   display: flex;
   align-items: center;
@@ -564,6 +650,7 @@ nav a[aria-current="page"] {
   margin-top: 19px;
 }
 
+/* STYLISE LES FLECHES */
 .carousel-controls button {
   min-width: 45px;
   min-height: 43px;
@@ -576,10 +663,12 @@ nav a[aria-current="page"] {
   transition: background-color .2s ease;
 }
 
+/* ANIME LES FLECHES */
 .carousel-controls button:hover {
   background: var(--blue-dark);
 }
 
+/* AFFICHE LE COMPTEUR */
 .carousel-counter {
   min-width: 50px;
   text-align: center;
@@ -587,19 +676,23 @@ nav a[aria-current="page"] {
   color: var(--navy);
 }
 
-/* ACCESSIBILITÉ ET NAVIGATION AU CLAVIER */
+/* ACCESSIBILITE */
+/* FACILITE LA NAVIGATION CLAVIER */
 
+/* IDENTIFIE LES ELEMENTS ACTIFS */
 :focus-visible {
   outline: 3px solid #e5a327;
   outline-offset: 3px;
 }
 
+/* AMELIORE LE CONTRASTE */
 nav a:focus-visible,
 .lang-btn:focus-visible {
   outline-color: #fff;
 }
 
 /* TABLETTE */
+/* ADAPTE LES GRANDS ECRANS */
 
 @media (max-width: 1020px) {
   .competences-grille {
@@ -612,6 +705,7 @@ nav a:focus-visible,
 }
 
 /* MOBILE */
+/* ADAPTE LES PETITS ECRANS */
 
 @media (max-width: 700px) {
   header {
@@ -630,6 +724,7 @@ nav a:focus-visible,
     margin: 3px 0;
   }
 
+  /* EMPILE LES ELEMENTS */
   .hero {
     min-height: auto;
     flex-direction: column;
@@ -643,6 +738,7 @@ nav a:focus-visible,
     width: 100%;
   }
 
+  /* REDUIT LA PHOTO */
   .hero-photo img {
     max-width: 230px;
   }
@@ -671,6 +767,7 @@ nav a:focus-visible,
     font-size: 1rem;
   }
 
+  /* EMPILE LES COMPETENCES */
   .competences-grille {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -702,7 +799,8 @@ nav a:focus-visible,
   }
 }
 
-/* PETITS ÉCRANS */
+/* PETITS ECRANS */
+/* OPTIMISE LES PETITS MOBILES */
 
 @media (max-width: 390px) {
   nav {
@@ -725,7 +823,8 @@ nav a:focus-visible,
   }
 }
 
-/* RÉDUCTION DES ANIMATIONS */
+/* REDUCTION DES ANIMATIONS */
+/* RESPECTE LES PREFERENCES UTILISATEUR */
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -741,98 +840,117 @@ nav a:focus-visible,
 }
 
 /* MENU HAMBURGER MOBILE */
+/* GERE LE MENU MOBILE */
 
+/* STYLISE LE BOUTON */
 .menu-toggle {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 44px;
-    padding: 8px;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 9px;
-    color: white;
-    cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 44px;
+  padding: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
 }
 
+/* REAGIT AU SURVOL */
 .menu-toggle:hover {
-    background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
+/* FACILITE LA NAVIGATION CLAVIER */
 .menu-toggle:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 3px;
+  outline: 3px solid white;
+  outline-offset: 3px;
 }
 
+/* CONSTRUIT LES TROIS BARRES */
 .menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
 
+/* DESSINE LES BARRES */
 .menu-icon span {
-    display: block;
-    width: 23px;
-    height: 2px;
-    background: white;
-    border-radius: 2px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+  display: block;
+  width: 23px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* ADAPTE LE MENU MOBILE */
 @media (max-width: 700px) {
 
-    header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-    }
+  /* ORGANISE VERTICALEMENT LE MENU */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
 
-    .menu-toggle {
-        display: flex;
-        align-self: flex-end;
-    }
+  /* AFFICHE LE BOUTON HAMBURGER */
+  .menu-toggle {
+    display: flex;
+    align-self: flex-end;
+  }
 
-    header nav > a,
-    header nav > .lang-switch {
-        display: none;
-    }
+  /* MASQUE LES LIENS */
+  header nav > a,
+  header nav > .lang-switch {
+    display: none;
+  }
 
-    header nav.menu-open > a {
-        display: block;
-        width: 100%;
-        padding: 13px 15px;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        text-align: left;
-    }
+  /* AFFICHE LE MENU OUVERT */
+  header nav.menu-open > a {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    text-align: left;
+  }
 
-    header nav.menu-open > .lang-switch {
-        display: inline-flex;
-        align-self: flex-start;
-        margin-top: 15px;
-    }
+  /* AFFICHE LES LANGUES */
+  header nav.menu-open > .lang-switch {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
 
-    header nav.menu-open {
-        padding-bottom: 12px;
-    }
+  /* ESPACE LE MENU OUVERT */
+  header nav.menu-open {
+    padding-bottom: 12px;
+  }
 
-    .menu-open .menu-icon span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
+  /* TRANSFORME LA PREMIERE BARRE */
+  .menu-open .menu-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
 
-    .menu-open .menu-icon span:nth-child(2) {
-        opacity: 0;
-    }
+  /* MASQUE LA BARRE CENTRALE */
+  .menu-open .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
 
-    .menu-open .menu-icon span:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
+  /* TRANSFORME LA TROISIEME BARRE */
+  .menu-open .menu-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 }
 
+/* ACCESSIBILITE DU MENU */
+/* DESACTIVE CERTAINES ANIMATIONS */
+
 @media (prefers-reduced-motion: reduce) {
-    .menu-icon span {
-        transition: none;
-    }
+  .menu-icon span {
+    transition: none;
+  }
 }

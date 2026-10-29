@@ -1,14 +1,18 @@
 
+/* DEFINIT LES TRADUCTIONS */
 const translations = {
+
+    /* TEXTES EN FRANCAIS */
     fr: {
-        // Navigation commune
+
+        /* TRADUIT LA NAVIGATION */
         navHome: "Accueil",
         navProjects: "Mes projets",
         navSkills: "Mes compétences",
         navExperience: "Mes expériences",
         navContact: "Contact",
 
-        // Accueil
+        /* TRADUIT LA PAGE ACCUEIL */
         metaDescription: "Portfolio de Mehdi Lrhoula, étudiant à Epitech en reconversion vers l'informatique. Découvrez mes projets, compétences et expériences.",
         heroIntro: "Bonjour, je suis",
         heroSubtitle: "Étudiant à Epitech • Informatique, Data & Intelligence Artificielle",
@@ -17,7 +21,7 @@ const translations = {
         discoverProjects: "Découvrir mes projets",
         downloadCV: "Télécharger mon CV",
 
-        // Projets
+        /* TRADUIT LA PAGE PROJETS */
         projectsMetaDescription: "Découvrez les projets informatiques réalisés par Mehdi Lrhoula au cours de sa formation à Epitech.",
         projectsTitle: "Mes projets",
         projectsIntroduction: "Une sélection de projets réalisés à Epitech et en autonomie, qui illustrent mes compétences en développement et en conception de produits numériques.",
@@ -27,6 +31,7 @@ const translations = {
         viewGithub: "Voir le code sur GitHub",
         projectInProgress: "Projet en cours de conception.",
 
+        /* TRADUIT LE PROJET PYJOBS */
         pyjobsContext: "Développement d'une plateforme de recrutement dans le cadre de ma formation à Epitech. L'objectif était de créer une application web permettant aux entreprises de publier des offres d'emploi et aux candidats de postuler.",
         pyjobsWork: "J’ai développé des fonctionnalités du frontend React et intégré les échanges avec une API Django REST réalisée en équipe. J’ai travaillé sur les parcours candidat et employeur : consultation des offres, filtres de recherche, formulaires de candidature, authentification et tableaux de bord. J’ai également participé aux tests des permissions et des échanges frontend/backend.",
         pyjobsLearning: "J’ai approfondi React (composants, états, formulaires), les appels API REST, la gestion des droits selon les rôles, les tests fonctionnels et la collaboration avec Git. J’ai appris à relier une interface à un serveur et à diagnostiquer les erreurs entre les deux.",
@@ -34,26 +39,30 @@ const translations = {
         pyjobsCaptionEmployer: "Espace employeur — Gestion des entreprises, des annonces et des candidatures reçues.",
         pyjobsCaptionCandidate: "Espace candidat — Consultation des candidatures et suivi de leur statut.",
 
+        /* TRADUIT LE PROJET PENDU */
         hangmanTitle: "Jeu du Pendu",
         hangmanContext: "Réalisation d'un jeu du Pendu en Python dans le cadre de ma formation à Epitech. L'objectif était de mettre en pratique les fondamentaux de la programmation en développant une application interactive.",
         hangmanWork: "Le projet permet de sélectionner aléatoirement un mot, de gérer les lettres proposées par le joueur, les erreurs et les conditions de victoire ou de défaite. Une interface graphique a ensuite été développée avec Pygame.",
         hangmanLearning: "Ce projet m'a permis de progresser dans l'utilisation des fonctions, des conditions, des boucles, des fichiers et dans l'organisation générale d'un programme Python.",
 
+        /* TRADUIT LE PROJET CODINGPEDIA */
         codingContext: "Réalisation d'un site web dans le cadre de ma formation à Epitech. L'objectif était de découvrir les fondamentaux du développement web et de construire des pages structurées en HTML et mises en forme avec CSS.",
         codingWork: "J'ai créé plusieurs pages web en utilisant les principales balises HTML et les propriétés CSS pour organiser et mettre en forme le contenu. J'ai également travaillé sur la structure des pages, la navigation et l'adaptation de l'affichage à différentes tailles d'écran.",
         codingLearning: "Ce projet m'a permis de mieux comprendre la séparation entre la structure HTML et la mise en forme CSS, ainsi que l'utilisation de Flexbox et des media queries pour créer des interfaces responsives.",
         codingProgressTitle: "Ma progression",
         codingProgress: "CodingPedia a évolué progressivement au fil de plusieurs exercices. J'ai commencé par construire la structure des pages en HTML avant d'ajouter progressivement la navigation, la mise en forme CSS et l'adaptation de l'interface aux différentes tailles d'écran.",
 
+        /* TRADUIT LE PROJET FRIGO */
         frigoTechnologies: "Conception produit • Gestion de projet • Gantt",
         frigoContext: "Projet de conception d'un réfrigérateur intelligent réalisé en équipe dans le cadre de ma formation à Epitech. L'objectif est d'imaginer une solution permettant de mieux gérer les aliments, de réduire le gaspillage et de faciliter l'organisation des repas.",
         frigoWork: "Avec mon équipe, nous avons défini les fonctionnalités envisagées : gestion des stocks, suivi des dates de péremption, recommandations de recettes et planification des repas. Nous travaillons également sur le cadrage du projet, ses priorités, ses risques et son diagramme de Gantt.",
         frigoLearning: "Ce projet me permet de découvrir les premières étapes de conception d'un produit numérique, notamment l'analyse des besoins, la priorisation des fonctionnalités, la gestion des risques et l'organisation du travail en équipe.",
 
+        /* TRADUIT MA PROGRESSION */
         progressTitle: "Ma progression",
         progressDescription: "Mes projets montrent une progression du HTML/CSS vers JavaScript, Python et les applications React connectées à une API. J’étudie aussi Java, Node.js et les fondamentaux de la programmation. Je complète cette pratique technique par mon expérience en gestion de projet, analyse des besoins et développement commercial.",
 
-        // Portfolio et ateliers
+        /* TRADUIT PORTFOLIO ET ATELIERS */
         portfolioTitle: "Portfolio personnel",
         portfolioContext: "Création d’un site personnel pour présenter mon parcours, mes projets et mes compétences aux recruteurs, avec une navigation accessible et une version française/anglaise.",
         portfolioWork: "J’ai construit les pages en HTML et CSS, ajouté des interactions en JavaScript, mis en place un bouton FR/EN avec mémorisation de la langue et intégré le téléchargement du CV. J’ai publié le site sur GitHub Pages.",
@@ -64,7 +73,7 @@ const translations = {
         workshopsWork: "En JavaScript et Node.js, j’ai travaillé sur les fonctions, les tableaux, les comparaisons et le traitement de chaînes. En Java, j’ai commencé par les méthodes, la concaténation et les premiers tests en JShell.",
         workshopsLearning: "J’apprends à lire le code étape par étape, à distinguer les types de données, à écrire des fonctions réutilisables et à tester les résultats dans le terminal.",
 
-        // Compétences
+        /* TRADUIT LA PAGE COMPETENCES */
         skillsMetaDescription: "Découvrez les compétences techniques et professionnelles développées par Mehdi Lrhoula au cours de sa formation et de ses expériences.",
         skillsTitle: "Mes compétences",
         skillsIntro: "Les compétences techniques et professionnelles que je développe au cours de ma formation à Epitech et de mes projets.",
@@ -86,7 +95,7 @@ const translations = {
         skillsITProject: "Gestion de projet IT",
         skillsDigital: "Transformation digitale",
 
-        // Expériences
+        /* TRADUIT LA PAGE EXPERIENCES */
         experienceMetaDescription: "Découvrez les expériences professionnelles de Mehdi Lrhoula et les compétences développées en gestion de projet, business et environnement international.",
         experienceTitle: "Mes expériences",
         experienceIntro: "Mon parcours professionnel m'a permis de développer des compétences en gestion de projet, analyse des besoins, coordination et travail dans des environnements internationaux.",
@@ -107,7 +116,7 @@ const translations = {
         hbAchievements: "Consultation et négociation auprès des compagnies maritimes, analyse des offres spot et contractuelles et participation aux réponses aux appels d'offres.",
         hbSkills: "Achats • Analyse des besoins • Négociation • Appels d'offres • Coordination fournisseurs • Transport maritime",
 
-        // Contact
+        /* TRADUIT LA PAGE CONTACT */
         contactMetaDescription: "Contactez Mehdi Lrhoula pour échanger autour d'une opportunité professionnelle, d'une alternance ou d'un projet.",
         contactTitle: "Me contacter",
         contactIntro: "Une opportunité, un projet ou simplement envie d'échanger ? Vous pouvez me contacter à l'aide du formulaire ci-dessous.",
@@ -118,15 +127,17 @@ const translations = {
         contactSubmit: "Envoyer le message"
     },
 
+    /* TEXTES EN ANGLAIS */
     en: {
-        // Shared navigation
+
+        /* TRANSLATES SHARED NAVIGATION */
         navHome: "Home",
         navProjects: "My projects",
         navSkills: "My skills",
         navExperience: "My experience",
         navContact: "Contact",
 
-        // Home
+        /* TRANSLATES HOME PAGE */
         metaDescription: "Portfolio of Mehdi Lrhoula, an Epitech student transitioning into IT. Discover my projects, skills and professional experience.",
         heroIntro: "Hello, I'm",
         heroSubtitle: "Epitech Student • IT, Data & Artificial Intelligence",
@@ -135,7 +146,7 @@ const translations = {
         discoverProjects: "Discover my projects",
         downloadCV: "Download my CV",
 
-        // Projects
+        /* TRANSLATES PROJECTS PAGE */
         projectsMetaDescription: "Discover the software and web development projects completed by Mehdi Lrhoula during his studies at Epitech.",
         projectsTitle: "My Projects",
         projectsIntroduction: "A selection of projects completed at Epitech and independently, showcasing my software development and digital product design skills.",
@@ -145,6 +156,7 @@ const translations = {
         viewGithub: "View Code on GitHub",
         projectInProgress: "Project currently in the design phase.",
 
+        /* TRANSLATES PYJOBS PROJECT */
         pyjobsContext: "Development of a recruitment platform as part of my studies at Epitech. The objective was to build a web application allowing companies to publish job opportunities and candidates to apply.",
         pyjobsWork: "I developed React frontend features and integrated them with a Django REST API built as a team. I worked on candidate and employer journeys: browsing job listings, search filters, application forms, authentication and dashboards. I also contributed to testing permissions and frontend/backend communication.",
         pyjobsLearning: "I strengthened my React knowledge (components, state and forms), REST API integration, role-based permissions, functional testing and Git collaboration. I learned how to connect a user interface to a server and troubleshoot issues between them.",
@@ -152,26 +164,30 @@ const translations = {
         pyjobsCaptionEmployer: "Employer dashboard — Manage companies, job postings and received applications.",
         pyjobsCaptionCandidate: "Candidate dashboard — View submitted applications and track their status.",
 
+        /* TRANSLATES HANGMAN PROJECT */
         hangmanTitle: "Hangman Game",
         hangmanContext: "Development of a Hangman game in Python as part of my studies at Epitech. The goal was to practice programming fundamentals by building an interactive application.",
         hangmanWork: "The game randomly selects a word, handles player guesses, tracks mistakes and determines win or loss conditions. A graphical interface was then developed using Pygame.",
         hangmanLearning: "This project helped me improve my understanding of functions, conditions, loops, file handling and the overall structure of a Python program.",
 
+        /* TRANSLATES CODINGPEDIA PROJECT */
         codingContext: "Development of a website as part of my studies at Epitech. The objective was to discover web development fundamentals and build structured HTML pages styled with CSS.",
         codingWork: "I created several web pages using HTML elements and CSS properties to structure and style the content. I also worked on page layout, navigation and responsive design for different screen sizes.",
         codingLearning: "This project helped me better understand the separation between HTML structure and CSS styling, as well as the use of Flexbox and media queries to create responsive interfaces.",
         codingProgressTitle: "My Progress",
         codingProgress: "CodingPedia evolved progressively through several exercises. I started by building the HTML structure before gradually adding navigation, CSS styling and responsive layouts for different screen sizes.",
 
+        /* TRANSLATES SMART FRIDGE PROJECT */
         frigoTechnologies: "Product Design • Project Management • Gantt Chart",
         frigoContext: "A smart refrigerator design project developed as a team during my studies at Epitech. The goal is to design a solution that improves food inventory management, reduces waste and simplifies meal planning.",
         frigoWork: "Together with my team, we defined the planned features: inventory management, expiration date tracking, recipe recommendations and meal planning. We are also working on project scope, priorities, risks and the Gantt chart.",
         frigoLearning: "This project is helping me discover the early stages of digital product design, including requirements analysis, feature prioritization, risk management and teamwork.",
 
+        /* TRANSLATES MY PROGRESS */
         progressTitle: "My Progress",
         progressDescription: "My projects show a progression from HTML/CSS to JavaScript, Python and React applications connected to an API. I am also learning Java, Node.js and programming fundamentals. I combine this technical practice with my background in project management, requirements analysis and business development.",
 
-        // Portfolio and workshops
+        /* TRANSLATES PORTFOLIO AND WORKSHOPS */
         portfolioTitle: "Personal Portfolio",
         portfolioContext: "I built a personal website to introduce my background, projects and skills to recruiters, with accessible navigation and French/English content.",
         portfolioWork: "I created the pages using HTML and CSS, added JavaScript interactions, implemented a FR/EN language switch with saved preferences and enabled CV downloads. I published the website using GitHub Pages.",
@@ -182,7 +198,7 @@ const translations = {
         workshopsWork: "In JavaScript and Node.js, I practiced functions, arrays, comparisons and string processing. In Java, I started with methods, concatenation and initial tests using JShell.",
         workshopsLearning: "I am learning to read code step by step, distinguish data types, write reusable functions and test results in the terminal.",
 
-        // Skills
+        /* TRANSLATES SKILLS PAGE */
         skillsMetaDescription: "Discover Mehdi Lrhoula's technical and professional skills developed through his education, projects and work experience.",
         skillsTitle: "My Skills",
         skillsIntro: "The technical and professional skills I am developing through my studies at Epitech and my projects.",
@@ -204,7 +220,7 @@ const translations = {
         skillsITProject: "IT Project Management",
         skillsDigital: "Digital Transformation",
 
-        // Experience
+        /* TRANSLATES EXPERIENCE PAGE */
         experienceMetaDescription: "Discover Mehdi Lrhoula's professional experience and skills in project management, business and international environments.",
         experienceTitle: "My Experience",
         experienceIntro: "My professional background has allowed me to develop skills in project management, requirements analysis, coordination and working in international environments.",
@@ -225,7 +241,7 @@ const translations = {
         hbAchievements: "Consulting and negotiating with shipping companies, analyzing spot and contractual offers and contributing to responses to tenders.",
         hbSkills: "Procurement • Requirements Analysis • Negotiation • Tender Management • Supplier Coordination • Maritime Transport",
 
-        // Contact
+        /* TRANSLATES CONTACT PAGE */
         contactMetaDescription: "Contact Mehdi Lrhoula to discuss a professional opportunity, a work-study position or a project.",
         contactTitle: "Contact Me",
         contactIntro: "Have an opportunity, a project or simply want to connect? Feel free to contact me using the form below.",
@@ -237,10 +253,13 @@ const translations = {
     }
 };
 
-// Fonction de changement de langue
+/* GERE LE CHANGEMENT LANGUE */
 function changeLanguage(lang) {
+
+    /* VERIFIE LA LANGUE */
     const selectedLanguage = translations[lang] ? lang : "fr";
 
+    /* TRADUIT LES ELEMENTS HTML */
     document.querySelectorAll("[data-i18n]").forEach(element => {
         const key = element.getAttribute("data-i18n");
         const translation = translations[selectedLanguage][key];
@@ -250,6 +269,7 @@ function changeLanguage(lang) {
         }
     });
 
+    /* TRADUIT LES METADONNEES */
     document.querySelectorAll("[data-i18n-content]").forEach(element => {
         const key = element.getAttribute("data-i18n-content");
         const translation = translations[selectedLanguage][key];
@@ -259,14 +279,17 @@ function changeLanguage(lang) {
         }
     });
 
+    /* ACTUALISE LES BOUTONS */
     document.querySelectorAll(".lang-btn").forEach(button => {
         const isActive = button.dataset.lang === selectedLanguage;
         button.classList.toggle("active", isActive);
         button.setAttribute("aria-pressed", String(isActive));
     });
 
+    /* ACTUALISE LA LANGUE HTML */
     document.documentElement.lang = selectedLanguage;
 
+    /* MEMORISE LA LANGUE */
     try {
         localStorage.setItem("portfolioLanguage", selectedLanguage);
     } catch (error) {
@@ -274,131 +297,97 @@ function changeLanguage(lang) {
     }
 }
 
-// Événements des boutons FR / EN
+/* ACTIVE LES BOUTONS LANGUES */
 document.querySelectorAll(".lang-btn").forEach(button => {
     button.addEventListener("click", () => {
         changeLanguage(button.dataset.lang);
     });
 });
 
-// Langue sauvegardée
+/* INITIALISE LA LANGUE */
 let savedLanguage = "fr";
 
+/* RECUPERE LA LANGUE SAUVEGARDEE */
 try {
     savedLanguage = localStorage.getItem("portfolioLanguage") || "fr";
 } catch (error) {
     console.warn("Language preference could not be loaded.");
 }
 
+/* APPLIQUE LA LANGUE SAUVEGARDEE */
 changeLanguage(savedLanguage);
 
-
-/* Traductions actualisées de la page Compétences */
-
+/* COMPLETE LES COMPETENCES FRANCAISES */
 Object.assign(translations.fr, {
     skillsIntro: "Les compétences techniques et professionnelles que je développe à Epitech, complétées par mon expérience en gestion de projet et en business.",
-
     skillsDevelopment: "Développement web",
-
     skillsHtml: "Structure HTML, Flexbox, CSS Grid, responsive design, media queries et bases de l'accessibilité.",
-
     skillsJavaScript: "Variables, fonctions, conditions, boucles, tableaux, événements, manipulation du DOM et formulaires interactifs.",
-
     skillsReact: "Composants React, useState, affichage dynamique, gestion des formulaires et connexion à une API.",
-
     skillsProgramming: "Programmation",
-
     skillsPython: "Fonctions, conditions, boucles, manipulation de données et fichiers. Développement d'un jeu interactif avec Pygame.",
-
     skillsJava: "Initiation à la syntaxe Java, méthodes, chaînes de caractères, concaténation et tests avec JShell.",
-
     skillsNode: "Exécution de JavaScript côté serveur, modules, fonctions et exercices sur les tableaux et les chaînes.",
-
     skillsBackendTitle: "Backend & API",
-
     skillsAPI: "Connexion d'un frontend React à une API REST, requêtes HTTP, échanges JSON et gestion des réponses du serveur.",
-
     skillsDjango: "Découverte des endpoints Django REST, de l'authentification, des rôles, des permissions et des opérations CRUD dans le projet PYJOBS.",
-
     skillsGit: "Commits, branches, push, travail collaboratif, gestion des dépôts et déploiement sur GitHub Pages.",
-
     skillsLinux: "Utilisation du terminal Linux, navigation dans les dossiers, commandes de base et environnement de développement WSL.",
-
     skillsTerminal: "Développement avec Visual Studio Code, terminal, npm et outils de test.",
-
     skillsProject: "Coordination d'équipes, organisation, suivi d'objectifs, priorisation et pilotage de projets.",
-
     skillsNeeds: "Identification des problématiques métiers, analyse des attentes et traduction des besoins en fonctionnalités.",
-
     skillsProductTitle: "Conception produit",
-
     skillsProduct: "Définition d'un MVP, priorisation des fonctionnalités, analyse des risques et planification avec un diagramme de Gantt.",
-
     skillsLearningIntro: "Je consolide actuellement mes bases en développement et approfondis les technologies liées aux applications web, à la Data et à l'intelligence artificielle."
 });
 
+/* COMPLETE LES COMPETENCES ANGLAISES */
 Object.assign(translations.en, {
     skillsIntro: "Technical and professional skills I am developing at Epitech, combined with my background in project management and business.",
-
     skillsDevelopment: "Web Development",
-
     skillsHtml: "HTML structure, Flexbox, CSS Grid, responsive design, media queries and accessibility fundamentals.",
-
     skillsJavaScript: "Variables, functions, conditions, loops, arrays, events, DOM manipulation and interactive forms.",
-
     skillsReact: "React components, useState, dynamic rendering, form management and API integration.",
-
     skillsProgramming: "Programming",
-
     skillsPython: "Functions, conditions, loops, data manipulation and file handling. Development of an interactive game using Pygame.",
-
     skillsJava: "Introduction to Java syntax, methods, strings, concatenation and testing with JShell.",
-
     skillsNode: "Running JavaScript on the server side, modules, functions and exercises with arrays and strings.",
-
     skillsBackendTitle: "Backend & APIs",
-
     skillsAPI: "Connecting a React frontend to a REST API, HTTP requests, JSON data exchange and handling server responses.",
-
     skillsDjango: "Introduction to Django REST endpoints, authentication, user roles, permissions and CRUD operations through the PYJOBS project.",
-
     skillsGit: "Commits, branches, push, collaborative development, repository management and deployment using GitHub Pages.",
-
     skillsLinux: "Using the Linux terminal, directory navigation, basic commands and the WSL development environment.",
-
     skillsTerminal: "Development with Visual Studio Code, terminal, npm and testing tools.",
-
     skillsProject: "Team coordination, organization, goal tracking, prioritization and project management.",
-
     skillsNeeds: "Identifying business challenges, analyzing expectations and translating requirements into features.",
-
     skillsProductTitle: "Product Design",
-
     skillsProduct: "MVP definition, feature prioritization, risk analysis and planning with Gantt charts.",
-
     skillsLearningIntro: "I am strengthening my development foundations while exploring web applications, Data and artificial intelligence technologies."
 });
 
-// Actualiser les textes avec les nouvelles traductions
+/* ACTUALISE LES NOUVELLES TRADUCTIONS */
 changeLanguage(savedLanguage);
 
-
-
-/* MENU HAMBURGER MOBILE ACCESSIBLE ET BILINGUE */
-
+/* INITIALISE LE MENU MOBILE */
 function initMobileMenu() {
+
+    /* RECUPERE LA NAVIGATION */
     const nav = document.querySelector("header nav");
 
+    /* VERIFIE SA PRESENCE */
     if (!nav) {
         return;
     }
 
+    /* CREE LE BOUTON HAMBURGER */
     const menuButton = document.createElement("button");
 
+    /* CONFIGURE LE BOUTON */
     menuButton.type = "button";
     menuButton.className = "menu-toggle";
     menuButton.setAttribute("aria-expanded", "false");
 
+    /* DESSINE LES TROIS BARRES */
     menuButton.innerHTML = `
         <span class="menu-icon" aria-hidden="true">
             <span></span>
@@ -407,18 +396,22 @@ function initMobileMenu() {
         </span>
     `;
 
+    /* INSERE LE BOUTON */
     nav.prepend(menuButton);
 
-    // Repérer la langue actuellement sélectionnée
+    /* DETECTE LA LANGUE ACTIVE */
     function getCurrentLanguage() {
         return document.documentElement.lang === "en" ? "en" : "fr";
     }
 
-    // Actualiser le texte accessible du bouton
+    /* ACTUALISE LE LIBELLE ACCESSIBLE */
     function updateMenuLabel() {
+
+        /* VERIFIE ETAT DU MENU */
         const isOpen = nav.classList.contains("menu-open");
         const lang = getCurrentLanguage();
 
+        /* DEFINIT LES LIBELLES */
         const labels = {
             fr: {
                 open: "Ouvrir le menu",
@@ -430,21 +423,23 @@ function initMobileMenu() {
             }
         };
 
+        /* SELECTIONNE LE BON LIBELLE */
         const label = isOpen
             ? labels[lang].close
             : labels[lang].open;
 
+        /* ACTUALISE LE BOUTON */
         menuButton.setAttribute("aria-label", label);
     }
 
-    // Fermer le menu
+    /* FERME LE MENU */
     function closeMenu() {
         nav.classList.remove("menu-open");
         menuButton.setAttribute("aria-expanded", "false");
         updateMenuLabel();
     }
 
-    // Ouvrir et fermer avec le bouton
+    /* OUVRE OU FERME MENU */
     menuButton.addEventListener("click", () => {
         const isOpen = nav.classList.toggle("menu-open");
 
@@ -456,12 +451,12 @@ function initMobileMenu() {
         updateMenuLabel();
     });
 
-    // Fermer après un clic sur un lien
+    /* FERME APRES CLIC LIEN */
     nav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", closeMenu);
     });
 
-    // Fermer avec la touche Échap
+    /* FERME AVEC TOUCHE ECHAP */
     document.addEventListener("keydown", event => {
         if (
             event.key === "Escape" &&
@@ -472,28 +467,30 @@ function initMobileMenu() {
         }
     });
 
-    // Fermer après un clic en dehors
+    /* FERME AU CLIC EXTERIEUR */
     document.addEventListener("click", event => {
         if (!nav.contains(event.target)) {
             closeMenu();
         }
     });
 
-    // Réinitialiser en passant au mode ordinateur
+    /* ADAPTE AU REDIMENSIONNEMENT */
     window.addEventListener("resize", () => {
         if (window.innerWidth > 700) {
             closeMenu();
         }
     });
 
-    // Actualiser le libellé lors du changement FR/EN
+    /* ACTUALISE APRES CHANGEMENT LANGUE */
     nav.querySelectorAll(".lang-btn").forEach(button => {
         button.addEventListener("click", () => {
             updateMenuLabel();
         });
     });
 
+    /* INITIALISE LE LIBELLE */
     updateMenuLabel();
 }
 
+/* ACTIVE LE MENU MOBILE */
 initMobileMenu();

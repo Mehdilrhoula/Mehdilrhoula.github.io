@@ -3,29 +3,39 @@
 <html lang="fr">
 
 <head>
+    <!-- CONFIGURE LA PAGE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- DECRIT LE SITE -->
     <meta name="description"
         content="Contactez Mehdi Lrhoula pour échanger autour d'une opportunité professionnelle, d'une alternance ou d'un projet."
         data-i18n-content="contactMetaDescription">
 
+    <!-- DEFINIT LE TITRE -->
     <title>Contact | Mehdi Lrhoula</title>
 
+    <!-- CHARGE LES STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- CHARGE LES TRADUCTIONS -->
     <script src="js/lang.js" defer></script>
 </head>
 
 <body>
 
+    <!-- AFFICHE LA NAVIGATION -->
     <header>
         <nav aria-label="Navigation principale">
+
+            <!-- LIENS VERS LES PAGES -->
             <a href="index.html" data-i18n="navHome">Accueil</a>
             <a href="projets.html" data-i18n="navProjects">Mes projets</a>
             <a href="competences.html" data-i18n="navSkills">Mes compétences</a>
             <a href="experiences.html" data-i18n="navExperience">Mes expériences</a>
             <a href="contact.html" data-i18n="navContact" aria-current="page">Contact</a>
 
+            <!-- BOUTONS DES LANGUES -->
             <div class="lang-switch" role="group" aria-label="Choix de la langue">
                 <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
                 <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -33,9 +43,11 @@
         </nav>
     </header>
 
+    <!-- CONTENU PRINCIPAL -->
     <main>
         <section class="page-contact">
 
+            <!-- PRESENTE LA PAGE -->
             <div class="titre-page">
                 <h1 data-i18n="contactTitle">Me contacter</h1>
 
@@ -45,38 +57,45 @@
                 </p>
             </div>
 
+            <!-- AFFICHE MON EMAIL -->
             <div class="contact-direct">
                 <p>
                     <span data-i18n="contactDirect">
                         Vous pouvez également me contacter directement par e-mail :
                     </span>
 
+                    <!-- OUVRE LA MESSAGERIE -->
                     <a href="mailto:mehdi.lrhoula@epitech.eu">
                         mehdi.lrhoula@epitech.eu
                     </a>
                 </p>
             </div>
 
+            <!-- FORMULAIRE DE CONTACT -->
             <form class="formulaire-contact" id="formulaire-contact">
 
+                <!-- SAISIE DU NOM -->
                 <div class="champ-formulaire">
                     <label for="nom" data-i18n="contactName">Nom</label>
                     <input type="text" id="nom" name="nom"
                         autocomplete="name" required>
                 </div>
 
+                <!-- SAISIE DE EMAIL -->
                 <div class="champ-formulaire">
                     <label for="email" data-i18n="contactEmail">Email</label>
                     <input type="email" id="email" name="email"
                         autocomplete="email" required>
                 </div>
 
+                <!-- SAISIE DU MESSAGE -->
                 <div class="champ-formulaire">
                     <label for="message" data-i18n="contactMessage">Message</label>
                     <textarea id="message" name="message"
                         rows="6" required></textarea>
                 </div>
 
+                <!-- DECLENCHE LE FORMULAIRE -->
                 <button type="submit" data-i18n="contactSubmit">
                     Envoyer le message
                 </button>
@@ -86,6 +105,7 @@
         </section>
     </main>
 
+    <!-- ACTIVE LE FORMULAIRE -->
     <script src="js/contact.js"></script>
 </body>
 </html>
